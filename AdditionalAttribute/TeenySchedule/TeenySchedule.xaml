@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns ="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TeenySchedule.TeenySchedule"
+             xmlns:local="clr-namespace:AdditionalAttribute"
+     xmlns:schedule="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms">
+<!--                xmlns:local="clr-namespace:AdditionalAttribute"
+     xmlns:schedule="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+    x:Class="AdditionalAttribute.AdditionalAttributePage">
+
+      <Grid x:Name="grid_layout">
+           
+            <schedule:SfSchedule
+                x:Name="schedule" ScheduleView="WeekView" 
+                DataSource="{Binding ListOfMeeting}" 
+                HorizontalOptions="FillAndExpand" ShowAppointmentsInline="True"
+                VerticalOptions="FillAndExpand" >
+              <schedule:SfSchedule.WorkWeekViewSettings>
+                <schedule:WorkWeekViewSettings
+                     WorkStartHour="8"
+                     WorkEndHour="16">
+                </schedule:WorkWeekViewSettings>
+              </schedule:SfSchedule.WorkWeekViewSettings>
+              <schedule:SfSchedule.AppointmentMapping>
+                <schedule:ScheduleAppointmentMapping
+                    SubjectMapping="EventName" 
+                    ColorMapping="color"
+                    StartTimeMapping="From"
+                    EndTimeMapping="To"
+                  IsAllDayMapping="IsAllDay">
+                </schedule:ScheduleAppointmentMapping>
+              </schedule:SfSchedule.AppointmentMapping>
+              <schedule:SfSchedule.BindingContext>
+                <local:AppointmentEditorViewModel/>
+              </schedule:SfSchedule.BindingContext>
+            
+          
+          </schedule:SfSchedule>
+         <local:EditorLayout  x:Name="editorLayout" IsVisible="False"/>
+
+        </Grid>-->
+</ContentView>

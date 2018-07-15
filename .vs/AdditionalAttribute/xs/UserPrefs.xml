@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{EF9F2D97-3EBA-4A47-A6FD-47C06DADCFBD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AdditionalAttribute/Properties/AssemblyInfo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomApptEdtrGITTED Status">
     <Files>
-      <File FileName="AdditionalAttribute/App.xaml" Line="7" Column="1" />
-      <File FileName="AdditionalAttribute/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="AdditionalAttribute/AdditionalAttributePage.xaml" Line="40" Column="1" />
       <File FileName="AdditionalAttribute/CustomAppointment.cs" Line="19" Column="47" />
-      <File FileName="AdditionalAttribute/ViewModel/AppointmentEditorViewModel.cs" Line="81" Column="3" />
       <File FileName="AdditionalAttribute/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="AdditionalAttribute/TeenySchedule/TeenySchedule.xaml" Line="6" Column="103" />
+      <File FileName="AdditionalAttribute/TeenySchedule/TeenySchedule.xaml.cs" Line="15" Column="1" />
+      <File FileName="AdditionalAttribute/AdditionalAttributePage.xaml" Line="4" Column="1" />
+      <File FileName="CustomApptEdtrGITTED Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
