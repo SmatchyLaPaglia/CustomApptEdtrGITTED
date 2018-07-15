@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{EF9F2D97-3EBA-4A47-A6FD-47C06DADCFBD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdditionalAttribute/Properties/AssemblyInfo.cs">
+    <Files>
+      <File FileName="AdditionalAttribute/App.xaml" Line="7" Column="1" />
+      <File FileName="AdditionalAttribute/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="AdditionalAttribute/AdditionalAttributePage.xaml" Line="40" Column="1" />
+      <File FileName="AdditionalAttribute/CustomAppointment.cs" Line="19" Column="47" />
+      <File FileName="AdditionalAttribute/ViewModel/AppointmentEditorViewModel.cs" Line="81" Column="3" />
+      <File FileName="AdditionalAttribute/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.AdditionalAttribute.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.AdditionalAttribute.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4A570308-9AB5-4AC2-BFBF-1F93BA8A48F6" />
+</Properties>
