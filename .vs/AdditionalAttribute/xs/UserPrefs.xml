@@ -1,12 +1,14 @@
 ﻿<Properties StartupConfiguration="{EF9F2D97-3EBA-4A47-A6FD-47C06DADCFBD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CustomApptEdtrGITTED Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml">
     <Files>
       <File FileName="AdditionalAttribute/CustomAppointment.cs" Line="19" Column="47" />
       <File FileName="AdditionalAttribute/Properties/AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="AdditionalAttribute/TeenySchedule/TeenySchedule.xaml" Line="6" Column="103" />
-      <File FileName="AdditionalAttribute/TeenySchedule/TeenySchedule.xaml.cs" Line="15" Column="1" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml" Line="4" Column="43" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs" Line="5" Column="23" />
       <File FileName="AdditionalAttribute/AdditionalAttributePage.xaml" Line="4" Column="1" />
-      <File FileName="CustomApptEdtrGITTED Status" />
+      <File FileName="AdditionalAttribute/App.xaml.cs" Line="12" Column="15" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml" Line="8" Column="1" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

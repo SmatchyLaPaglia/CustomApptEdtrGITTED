@@ -33,7 +33,11 @@
     <EmbeddedResource Include="EditorLayout.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeenySchedule\TeenySchedule.xaml">
+    <EmbeddedResource Include="TeenyPlanner\TeenySchedule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeenyPlanner\TeenyPlannerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -53,8 +57,11 @@
     <Compile Include="ViewModel\EditorLayoutViewModel.cs" />
     <Compile Include="Meeting.cs" />
     <Compile Include="ViewModel\AppointmentEditorViewModel.cs" />
-    <Compile Include="TeenySchedule\TeenySchedule.xaml.cs">
+    <Compile Include="TeenyPlanner\TeenySchedule.xaml.cs">
       <DependentUpon>TeenySchedule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TeenyPlanner\TeenyPlannerPage.xaml.cs">
+      <DependentUpon>TeenyPlannerPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -76,7 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModel\" />
-    <Folder Include="TeenySchedule\" />
+    <Folder Include="TeenyPlanner\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />

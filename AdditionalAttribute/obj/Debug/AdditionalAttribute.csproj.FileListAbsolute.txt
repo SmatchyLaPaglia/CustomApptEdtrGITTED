@@ -40,4 +40,5 @@
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.EditorLayout.xaml.g.cs
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.pdb
-/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.TeenySchedule.TeenySchedule.xaml.g.cs
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.TeenyPlanner.TeenySchedule.xaml.g.cs
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.TeenyPlanner.TeenyPlannerPage.xaml.g.cs

@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using TeenyPlanner;
 
 namespace AdditionalAttribute
 {
@@ -8,7 +9,7 @@ namespace AdditionalAttribute
 		{
 			InitializeComponent();
 
-			MainPage = new AdditionalAttributePage();
+			MainPage = new TeenyPlannerPage();
 		}
 
 		protected override void OnStart()

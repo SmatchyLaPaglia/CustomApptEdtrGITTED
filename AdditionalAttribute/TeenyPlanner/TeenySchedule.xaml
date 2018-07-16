@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns         ="http://xamarin.com/schemas/2014/forms"
+             xmlns:x        ="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class        ="TeenyPlanner.TeenySchedule"
+             xmlns:local    ="clr-namespace:AdditionalAttribute"
+             xmlns:schedule ="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+             BackgroundColor="Silver">
+    <Grid x:Name="grid_layout">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Frame Grid.Row    ="0"
+               CornerRadius="18"
+               Padding     ="7">
+            <schedule:SfSchedule x:Name                ="schedule"
+                                 ScheduleView          ="MonthView"
+                                 DataSource            ="{Binding ListOfMeeting}"
+                                 HorizontalOptions     ="FillAndExpand"
+                                 ShowAppointmentsInline="True"
+                                 VerticalOptions       ="FillAndExpand">
+                <schedule:SfSchedule.WorkWeekViewSettings>
+                    <schedule:WorkWeekViewSettings WorkStartHour="8"
+                                                   WorkEndHour  ="16">
+                    </schedule:WorkWeekViewSettings>
+                </schedule:SfSchedule.WorkWeekViewSettings>
+                <schedule:SfSchedule.AppointmentMapping>
+                    <schedule:ScheduleAppointmentMapping SubjectMapping  ="EventName"
+                                                         ColorMapping    ="color"
+                                                         StartTimeMapping="From"
+                                                         EndTimeMapping  ="To"
+                                                         IsAllDayMapping ="IsAllDay">
+                    </schedule:ScheduleAppointmentMapping>
+                </schedule:SfSchedule.AppointmentMapping>
+                <schedule:SfSchedule.BindingContext>
+                    <local:AppointmentEditorViewModel />
+                </schedule:SfSchedule.BindingContext>
+            </schedule:SfSchedule>
+        </Frame>
+        <Frame Grid.Row    ="1"
+               CornerRadius="13"
+               Padding     ="7">
+        </Frame>
+        <Frame Grid.Row    ="2"
+               CornerRadius="13"
+               Padding     ="7">
+            
+        </Frame>
+        <Frame Grid.Row    ="3"
+               CornerRadius="13"
+               Padding     ="7">
+        </Frame>
+        <local:EditorLayout x:Name   ="editorLayout"
+                            IsVisible="False" />
+    </Grid>
+</ContentView>

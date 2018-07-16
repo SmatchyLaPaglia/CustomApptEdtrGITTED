@@ -1,0 +1,6 @@
+2018-07-15 20:21:53.775 AdditionalAttribute.iOS[97457:9048874] Xamarin.iOS: Added IP to look for the IDE: 127.0.0.1
+2018-07-15 20:21:53.775 AdditionalAttribute.iOS[97457:9048874] Xamarin.iOS: IDE Port: 55255 Transport: WiFi
+2018-07-15 20:21:53.776 AdditionalAttribute.iOS[97457:9048874] Xamarin.iOS: Socket error while connecting to IDE on 127.0.0.1:55255: Connection refused
+2018-07-15 20:21:53.776 AdditionalAttribute.iOS[97457:9048798] Xamarin.iOS: Debugger not loaded (disabled).
+2018-07-15 20:21:53.778 AdditionalAttribute.iOS[97457:9048798] Xamarin.iOS: Profiler not loaded (disabled)
+2018-07-15 20:21:53.810 AdditionalAttribute.iOS[97457:9048798] Xamarin.iOS: Added dllmap for objc_msgSend
