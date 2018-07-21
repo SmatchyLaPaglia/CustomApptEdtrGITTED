@@ -41,16 +41,19 @@
         </Frame>
         <Frame Grid.Row    ="1"
                CornerRadius="13"
-               Padding     ="7">
+               Padding     ="7"
+               IsClippedToBounds="true">
+            <TimePicker />
         </Frame>
         <Frame Grid.Row    ="2"
                CornerRadius="13"
-               Padding     ="7">
-            
+               Padding     ="8,10,8,10">
+            <Editor Text="tap to enter address" TextColor="Gray" x:Name="addressEditor" Focused="Handle_Focused"/>
         </Frame>
         <Frame Grid.Row    ="3"
                CornerRadius="13"
-               Padding     ="7">
+               Padding     ="20,7,20,7">
+            <Button IsEnabled="false" HorizontalOptions="StartAndExpand" Text="SEND DISPATCH" FontSize="Medium"/>
         </Frame>
         <local:EditorLayout x:Name   ="editorLayout"
                             IsVisible="False" />

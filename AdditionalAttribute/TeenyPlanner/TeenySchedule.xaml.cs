@@ -10,5 +10,10 @@ namespace TeenyPlanner
         {
             InitializeComponent();
         }
+
+		void Handle_Focused(object sender, Xamarin.Forms.FocusEventArgs e)
+		{
+			addressEditor.Text = "";
+		}
     }
 }

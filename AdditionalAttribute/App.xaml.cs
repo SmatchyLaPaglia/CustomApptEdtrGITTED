@@ -9,6 +9,7 @@ namespace AdditionalAttribute
 		{
 			InitializeComponent();
 
+			//MainPage = new AdditionalAttributePage();
 			MainPage = new TeenyPlannerPage();
 		}
 

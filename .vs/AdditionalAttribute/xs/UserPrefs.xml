@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{EF9F2D97-3EBA-4A47-A6FD-47C06DADCFBD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdditionalAttribute/obj/Debug/AdditionalAttribute.TeenyPlanner.TeenyPlannerPage.xaml.g.cs">
     <Files>
-      <File FileName="AdditionalAttribute/CustomAppointment.cs" Line="19" Column="47" />
+      <File FileName="AdditionalAttribute/CustomAppointment.cs" Line="19" Column="59" />
       <File FileName="AdditionalAttribute/Properties/AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml" Line="4" Column="43" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs" Line="5" Column="23" />
-      <File FileName="AdditionalAttribute/AdditionalAttributePage.xaml" Line="4" Column="1" />
-      <File FileName="AdditionalAttribute/App.xaml.cs" Line="12" Column="15" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml" Line="8" Column="1" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml" Line="7" Column="38" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs" Line="11" Column="35" />
+      <File FileName="AdditionalAttribute/AdditionalAttributePage.xaml" Line="40" Column="1" />
+      <File FileName="AdditionalAttribute/App.xaml.cs" Line="13" Column="38" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml" Line="8" Column="41" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml.cs" Line="13" Column="4" />
+      <File FileName="AdditionalAttribute/obj/Debug/AdditionalAttribute.TeenyPlanner.TeenyPlannerPage.xaml.g.cs" Line="20" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

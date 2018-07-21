@@ -10,6 +10,7 @@ namespace TeenyPlanner
         public TeenyPlannerPage()
         {
             InitializeComponent();
+
         }
     }
 }
