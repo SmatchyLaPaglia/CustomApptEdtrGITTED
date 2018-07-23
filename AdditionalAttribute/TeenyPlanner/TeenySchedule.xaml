@@ -40,6 +40,9 @@
                 </schedule:SfSchedule.BindingContext>
             </schedule:SfSchedule>
         </Frame>
+<!--        TimePicker (has extra Frame behind it because IsClippedToBounds removes shadow)-->
+                        <Frame Grid.Row="1"
+                       CornerRadius="13"/>
         <Frame Grid.Row         ="1"
                CornerRadius     ="13"
                Padding          ="7"
@@ -47,6 +50,8 @@
                IsClippedToBounds="true">
             <TimePicker />
         </Frame>
+
+<!--        Editor for address-->
         <Frame Grid.Row    ="2"
                CornerRadius="13"
                Padding     ="8,10,8,10">
@@ -56,6 +61,7 @@
                     Focused="Handle_Focused"
                     Unfocused="Handle_Unfocused"/>
         </Frame>
+<!--        Send dispatch button-->
         <Frame Grid.Row    ="3"
                CornerRadius="13"
                Padding     ="20,7,20,7">
