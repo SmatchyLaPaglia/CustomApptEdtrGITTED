@@ -7,10 +7,12 @@
              xmlns:schedule ="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
              BackgroundColor="Transparent">
     <View.Resources>
-        <Style x:Key     ="Labelfont"
+        <Style x:Key     ="textStyle"
                TargetType="Label">
             <Setter Property="FontSize"
                     Value   ="15" />
+                        <Setter Property="TextColor"
+                    Value   ="Gray" />
         </Style>
     </View.Resources>
     <Grid x:Name="grid_layout">
@@ -55,19 +57,17 @@
                Padding          ="7"
                IsClippedToBounds="true">
             <TimePicker x:Name="timePicker" />
-            <!--            <Button Text     ="choose time"
-                    Style="{StaticResource Labelfont}"/>-->
         </Frame>
-        <Frame
-            x:Name         ="timePickerPlaceholderFrame"
-            CornerRadius="13"
-               Padding     ="7"
-               Grid.Row    ="1" >
-            <Label 
+        <!--TimePicker has placeholder-text label in front, it vanishes and passes focus when tapped-->
+        <Frame x:Name      ="timePickerPlaceholderFrame"
+               CornerRadius="13"
+               Padding     ="17,10"
+               Grid.Row    ="1">
+                        <Label 
                    Text           ="choose time"
-                   Margin         ="7"
-                   Style          ="{StaticResource Labelfont}"
-                   VerticalOptions="Center">
+                   Style          ="{StaticResource textStyle}"
+                               VerticalTextAlignment="Center"
+                   VerticalOptions="FillAndExpand">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Handle_TimePickerPlaceholder_Tapped" />
                 </Label.GestureRecognizers>
@@ -76,9 +76,10 @@
         <!--Editor for address-->
         <Frame Grid.Row    ="2"
                CornerRadius="13"
-               Padding     ="8,10,8,10">
-            <Editor TextColor="Gray"
-                    Style    ="{StaticResource Labelfont}"
+               Padding     ="14,10,14,10">
+            <Editor
+                TextColor="Gray"
+                    Style    ="{StaticResource textStyle}"
                     x:Name   ="addressEditor"
                     Focused  ="Handle_Focused"
                     Unfocused="Handle_Unfocused" />
@@ -90,7 +91,7 @@
             <Button IsEnabled        ="false"
                     HorizontalOptions="StartAndExpand"
                     Text             ="SEND DISPATCH"
-                    Style            ="{StaticResource Labelfont}" />
+                    Style            ="{StaticResource textStyle}" />
         </Frame>
         <local:EditorLayout x:Name   ="editorLayout"
                             IsVisible="False" />

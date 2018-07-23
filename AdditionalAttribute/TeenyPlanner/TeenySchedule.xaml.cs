@@ -37,14 +37,6 @@ namespace TeenyPlanner
             }
         }
 
-        //DRY for setting placeholder editor text and color
-        void setupEditorPlaceholder()
-        {
-            addressEditor.Text = editorPlaceholderText;
-            addressEditor.TextColor = editorPlaceholderTextColor;
-        }
-
-
         void Handle_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
         }
@@ -54,6 +46,13 @@ namespace TeenyPlanner
         {
             timePickerPlaceholderFrame.IsVisible = false;
             timePicker.Focus();
+        }        
+
+        //DRY for setting placeholder editor text and color
+        void setupEditorPlaceholder()
+        {
+            addressEditor.Text = editorPlaceholderText;
+            addressEditor.TextColor = editorPlaceholderTextColor;
         }
     }
 }
