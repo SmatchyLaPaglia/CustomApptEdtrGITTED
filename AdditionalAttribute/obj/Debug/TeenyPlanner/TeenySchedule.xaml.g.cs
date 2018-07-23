@@ -32,6 +32,9 @@ namespace TeenyPlanner {
         private global::Xamarin.Forms.Editor addressEditor;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button sendDispatchButton;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::AdditionalAttribute.EditorLayout editorLayout;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
@@ -42,6 +45,7 @@ namespace TeenyPlanner {
             timePicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TimePicker>(this, "timePicker");
             timePickerPlaceholderFrame = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "timePickerPlaceholderFrame");
             addressEditor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Editor>(this, "addressEditor");
+            sendDispatchButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "sendDispatchButton");
             editorLayout = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::AdditionalAttribute.EditorLayout>(this, "editorLayout");
         }
     }

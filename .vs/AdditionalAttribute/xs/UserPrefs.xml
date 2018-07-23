@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{EF9F2D97-3EBA-4A47-A6FD-47C06DADCFBD}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs">
     <Files>
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml" Line="69" Column="17" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs" Line="52" Column="49" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml" Line="84" Column="50" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs" Line="48" Column="54" />
+      <File FileName="AdditionalAttribute/obj/Debug/TeenyPlanner/TeenyPlannerPage.xaml.g.cs" Line="21" Column="1" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml.cs" Line="14" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
