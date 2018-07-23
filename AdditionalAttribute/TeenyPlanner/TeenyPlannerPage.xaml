@@ -7,7 +7,7 @@
              ios:Page.UseSafeArea="true">
     <ContentPage.BackgroundColor>
         <OnPlatform x:TypeArguments="Color"
-                    iOS            ="Navy"
+                    iOS            ="Transparent"
                     Android        ="Yellow" />
     </ContentPage.BackgroundColor>
     <teeny:TeenySchedule />

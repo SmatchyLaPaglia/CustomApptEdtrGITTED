@@ -40,4 +40,3 @@
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/XamlC.stamp
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.pdb
-/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.csprojResolveAssemblyReference.cache

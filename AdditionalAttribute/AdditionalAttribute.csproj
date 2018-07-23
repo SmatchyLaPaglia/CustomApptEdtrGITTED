@@ -64,6 +64,7 @@
     <Compile Include="TeenyPlanner\TeenyPlannerPage.xaml.cs">
       <DependentUpon>TeenyPlannerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TeenyPlanner\EditorPlaceholder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

@@ -1,17 +1,10 @@
 ﻿<Properties StartupConfiguration="{EF9F2D97-3EBA-4A47-A6FD-47C06DADCFBD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Resources/values/styles.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdditionalAttribute/TeenyPlanner/EditorPlaceholder.cs">
     <Files>
-      <File FileName="AdditionalAttribute/CustomAppointment.cs" Line="19" Column="59" />
-      <File FileName="AdditionalAttribute/Properties/AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml" Line="61" Column="15" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs" Line="11" Column="35" />
-      <File FileName="AdditionalAttribute/AdditionalAttributePage.xaml" Line="40" Column="1" />
-      <File FileName="AdditionalAttribute/App.xaml.cs" Line="13" Column="38" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml" Line="7" Column="41" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml.cs" Line="15" Column="1" />
-      <File FileName="AdditionalAttribute/obj/Debug/AdditionalAttribute.TeenyPlanner.TeenyPlannerPage.xaml.g.cs" Line="1" Column="1" />
-      <File FileName="packages/Xamarin.Forms.3.1.0.637273/build/netstandard1.0/Xamarin.Forms.targets" Line="36" Column="16" />
-      <File FileName="Droid/Resources/values/styles.xml" Line="2" Column="1" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs" Line="31" Column="3" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml" Line="52" Column="53" />
+      <File FileName="AdditionalAttribute/obj/Debug/TeenyPlanner/TeenyPlannerPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/EditorPlaceholder.cs" Line="7" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -33,9 +33,11 @@
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/Xamarin.Forms.Xaml.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/AdditionalAttribute.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/FormsViewGroup.pdb
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/FormsViewGroup.dll.mdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/Xamarin.Forms.Core.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/Xamarin.Forms.Core.xml
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/Xamarin.Forms.Platform.Android.pdb
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/Xamarin.Forms.Xaml.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/Xamarin.Forms.Xaml.xml
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/Syncfusion.SfSchedule.XForms.xml
@@ -55,15 +57,11 @@
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/R.cs.flag
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/R.txt
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/uploadflags.txt
-/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/packages/Xamarin.Forms.3.1.0.637273/lib/MonoAndroid10/FormsViewGroup.dll
-/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/packages/Xamarin.Forms.3.1.0.637273/lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/Mono.Android.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/linksrc/AdditionalAttribute.Droid.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/linksrc/AdditionalAttribute.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/linksrc/Mono.Android.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/linksrc/Xamarin.Forms.Core.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/linksrc/Xamarin.Forms.Xaml.pdb
-/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/FormsViewGroup.dll.mdb
-/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/linksrc/FormsViewGroup.dll.mdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/linksrc/Xamarin.Forms.Platform.Android.dll.mdb

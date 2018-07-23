@@ -3,6 +3,7 @@
              xmlns:x        ="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class        ="TeenyPlanner.TeenySchedule"
              xmlns:local    ="clr-namespace:AdditionalAttribute"
+             xmlns:teeny    ="clr-namespace:TeenyPlaceholder"
              xmlns:schedule ="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
              BackgroundColor="Transparent">
     <Grid x:Name="grid_layout">
@@ -39,21 +40,29 @@
                 </schedule:SfSchedule.BindingContext>
             </schedule:SfSchedule>
         </Frame>
-        <Frame Grid.Row    ="1"
-               CornerRadius="13"
-               Padding     ="7"
+        <Frame Grid.Row         ="1"
+               CornerRadius     ="13"
+               Padding          ="7"
+               HasShadow        ="true"
                IsClippedToBounds="true">
             <TimePicker />
         </Frame>
         <Frame Grid.Row    ="2"
                CornerRadius="13"
                Padding     ="8,10,8,10">
-            <Editor Text="tap to enter address" TextColor="Gray" x:Name="addressEditor" Focused="Handle_Focused"/>
+            <Editor Text       ="tap to enter address"
+                    TextColor  ="Gray"
+                    x:Name     ="addressEditor"
+                    Focused="Handle_Focused"
+                    Unfocused="Handle_Unfocused"/>
         </Frame>
         <Frame Grid.Row    ="3"
                CornerRadius="13"
                Padding     ="20,7,20,7">
-            <Button IsEnabled="false" HorizontalOptions="StartAndExpand" Text="SEND DISPATCH" FontSize="Medium"/>
+            <Button IsEnabled        ="false"
+                    HorizontalOptions="StartAndExpand"
+                    Text             ="SEND DISPATCH"
+                    FontSize         ="Medium" />
         </Frame>
         <local:EditorLayout x:Name   ="editorLayout"
                             IsVisible="False" />
