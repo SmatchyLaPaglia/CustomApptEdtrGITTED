@@ -14,40 +14,46 @@ namespace TeenyPlanner
         public TeenySchedule()
         {
             InitializeComponent();
-            setupPlaceholderEditor();
+            setupEditorPlaceholder();
         }
 
         //Remove editor placeholder text when focused
-		void Handle_Focused(object sender, Xamarin.Forms.FocusEventArgs e)
-		{
-            if (addressEditor.Text == editorPlaceholderText) {
+        void Handle_Focused(object sender, Xamarin.Forms.FocusEventArgs e)
+        {
+            if (addressEditor.Text == editorPlaceholderText)
+            {
                 addressEditor.Text = "";
                 addressEditor.TextColor = Color.Black;
             }
-		}
+        }
 
+        //Reset editor placeholder text if editor is empty
         void Handle_Unfocused(object sender, Xamarin.Forms.FocusEventArgs e)
         {
             if (addressEditor.Text == "")
             {
-                setupPlaceholderEditor();
+                setupEditorPlaceholder();
                 return;
-            }        }
-
-        //Change editor text to placeholder if editor is empty
-        //void Handle_Unfocused(object sender, Xamarin.Forms.TextChangedEventArgs e)
-        //{
-            //if (addressEditor.Text == "")
-            //{
-            //    setupPlaceholderEditor();
-            //    return;
-            //}
-        //}
+            }
+        }
 
         //DRY for setting placeholder editor text and color
-        void setupPlaceholderEditor() {
+        void setupEditorPlaceholder()
+        {
             addressEditor.Text = editorPlaceholderText;
             addressEditor.TextColor = editorPlaceholderTextColor;
+        }
+
+
+        void Handle_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+        }
+
+        //Makes placeholder label over TimePicker disappear when tapped, and calls up timepicker
+        void Handle_TimePickerPlaceholder_Tapped(object sender, System.EventArgs e)
+        {
+            timePickerPlaceholderFrame.IsVisible = false;
+            timePicker.Focus();
         }
     }
 }

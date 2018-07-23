@@ -6,6 +6,13 @@
              xmlns:teeny    ="clr-namespace:TeenyPlaceholder"
              xmlns:schedule ="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
              BackgroundColor="Transparent">
+    <View.Resources>
+        <Style x:Key     ="Labelfont"
+               TargetType="Label">
+            <Setter Property="FontSize"
+                    Value   ="15" />
+        </Style>
+    </View.Resources>
     <Grid x:Name="grid_layout">
         <Grid.RowDefinitions>
             <RowDefinition Height="7*" />
@@ -40,35 +47,50 @@
                 </schedule:SfSchedule.BindingContext>
             </schedule:SfSchedule>
         </Frame>
-<!--        TimePicker (has extra Frame behind it because IsClippedToBounds removes shadow)-->
-                        <Frame Grid.Row="1"
-                       CornerRadius="13"/>
+        <!--TimePicker (has extra Frame behind it because IsClippedToBounds removes shadow)-->
+        <Frame Grid.Row    ="1"
+               CornerRadius="13" />
         <Frame Grid.Row         ="1"
                CornerRadius     ="13"
                Padding          ="7"
-               HasShadow        ="true"
                IsClippedToBounds="true">
-            <TimePicker />
+            <TimePicker x:Name="timePicker" />
+            <!--            <Button Text     ="choose time"
+                    Style="{StaticResource Labelfont}"/>-->
         </Frame>
-
-<!--        Editor for address-->
+        <Frame
+            x:Name         ="timePickerPlaceholderFrame"
+            CornerRadius="13"
+               Padding     ="7"
+               Grid.Row    ="1" >
+            <Label 
+                   Text           ="choose time"
+                   Margin         ="7"
+                   Style          ="{StaticResource Labelfont}"
+                   VerticalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Handle_TimePickerPlaceholder_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </Frame>
+        <!--Editor for address-->
         <Frame Grid.Row    ="2"
                CornerRadius="13"
                Padding     ="8,10,8,10">
-            <Editor Text       ="tap to enter address"
-                    TextColor  ="Gray"
-                    x:Name     ="addressEditor"
-                    Focused="Handle_Focused"
-                    Unfocused="Handle_Unfocused"/>
+            <Editor TextColor="Gray"
+                    Style    ="{StaticResource Labelfont}"
+                    x:Name   ="addressEditor"
+                    Focused  ="Handle_Focused"
+                    Unfocused="Handle_Unfocused" />
         </Frame>
-<!--        Send dispatch button-->
+        <!--Send dispatch button-->
         <Frame Grid.Row    ="3"
                CornerRadius="13"
                Padding     ="20,7,20,7">
             <Button IsEnabled        ="false"
                     HorizontalOptions="StartAndExpand"
                     Text             ="SEND DISPATCH"
-                    FontSize         ="Medium" />
+                    Style            ="{StaticResource Labelfont}" />
         </Frame>
         <local:EditorLayout x:Name   ="editorLayout"
                             IsVisible="False" />
