@@ -4,11 +4,12 @@
              x:Class             ="TeenyPlanner.TeenyPlannerPage"
              xmlns:teeny         ="clr-namespace:TeenyPlanner"
              xmlns:ios           ="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-             ios:Page.UseSafeArea="true">
+             ios:Page.UseSafeArea="true"
+             >
     <ContentPage.BackgroundColor>
         <OnPlatform x:TypeArguments="Color"
-                    iOS            ="Transparent"
+                    iOS            ="Yellow"
                     Android        ="Yellow" />
     </ContentPage.BackgroundColor>
-    <teeny:TeenySchedule />
+    <teeny:TeenySchedule Padding="5"/>
 </ContentPage>

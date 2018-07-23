@@ -46,6 +46,7 @@ namespace TeenyPlanner
             timePicker.Focus();
         }
 
+        //Determines whether or not the send dispatch button should be enabled
         void Handle_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
                 Debug.WriteLine("Handle_PropertyChanged was called");
@@ -54,19 +55,18 @@ namespace TeenyPlanner
                 var timeHasBeenSet = timePicker.Time != TimeSpan.Zero;
                 if (editorTextIsValid && timeHasBeenSet) {
                     sendDispatchButton.IsEnabled = true;
+                    sendDispatchButton.TextColor = Color.White;
+                    sendDispatchButton.BackgroundColor = Color.Blue;
+
+                    sendDispatchButtonFrame.BackgroundColor = Color.Blue;
                 } else {
                     sendDispatchButton.IsEnabled = false;
+                    sendDispatchButton.BackgroundColor = Color.White;
+                    sendDispatchButtonFrame.BackgroundColor = Color.White;
+                    sendDispatchButton.Style = this.Resources["textStyle"] as Style;
                 }
             }
-                //if (addressEditor.Text !=  editorPlaceholderText && String.IsNullOrWhiteSpace(addressEditor.Text) == false) {
-                //    Debug.WriteLine("Handle_PropertyChanged inner test of addressEditor passed");
-                //    sendDispatchButton.IsEnabled = true;
-                //} else {
-                //    sendDispatchButton.IsEnabled = false;
-                //}
         }
-
-       
 
         //DRY for setting placeholder editor text and color
         void setupEditorPlaceholder()

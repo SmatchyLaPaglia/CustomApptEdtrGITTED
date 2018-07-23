@@ -10,7 +10,7 @@
         <Style x:Key     ="textStyle"
                TargetType="Label">
             <Setter Property="FontSize"
-                    Value   ="15" />
+                    Value   ="Large" />
             <Setter Property="TextColor"
                     Value   ="Gray" />
         </Style>
@@ -51,11 +51,13 @@
         </Frame>
         <!--TimePicker (has extra Frame behind it because IsClippedToBounds removes shadow)-->
         <Frame Grid.Row    ="1"
-               CornerRadius="13" />
+               CornerRadius="13"
+/>
         <Frame Grid.Row         ="1"
                CornerRadius     ="13"
                Padding          ="7"
-               IsClippedToBounds="true">
+               IsClippedToBounds="true"
+>
             <TimePicker x:Name="timePicker"
                         PropertyChanged="Handle_PropertyChanged"
                         />
@@ -64,7 +66,9 @@
         <Frame x:Name      ="timePickerPlaceholderFrame"
                CornerRadius="13"
                Padding     ="17,10"
-               Grid.Row    ="1">
+               Grid.Row    ="1"
+               IsClippedToBounds="true"
+>
             <Label Text                 ="choose time"
                    Style                ="{StaticResource textStyle}"
                    VerticalTextAlignment="Center"
@@ -77,7 +81,8 @@
         <!--Editor for address-->
         <Frame Grid.Row    ="2"
                CornerRadius="13"
-               Padding     ="14,10,14,10">
+               Padding     ="14,10,14,10"
+>
             <Editor TextColor="Gray"
                     Style    ="{StaticResource textStyle}"
                     x:Name   ="addressEditor"
@@ -85,15 +90,21 @@
                     Unfocused="Handle_Unfocused" 
                     PropertyChanged="Handle_PropertyChanged"/>
         </Frame>
-        <!--Send dispatch button-->
-        <Frame Grid.Row    ="3"
+        <!--Send dispatch button (has extra Frame behind it because IsClippedToBounds removes shadow)-->
+                <Frame Grid.Row    ="3"
                CornerRadius="13"
-               Padding     ="20,7,20,7">
+                       />
+        <Frame x:Name="sendDispatchButtonFrame" Grid.Row    ="3"
+               CornerRadius="13"
+               Padding     ="0"
+               IsClippedToBounds="true">
             <Button x:Name           ="sendDispatchButton"
+                    BackgroundColor="White"
                     IsEnabled        ="false"
-                    HorizontalOptions="StartAndExpand"
-                    Text             ="SEND DISPATCH"
-                    Style            ="{StaticResource textStyle}" />
+                    VerticalOptions="FillAndExpand"
+                    Text             ="Send Dispatch"
+                    Style            ="{StaticResource textStyle}"
+                    />
         </Frame>
         <local:EditorLayout x:Name   ="editorLayout"
                             IsVisible="False" />
