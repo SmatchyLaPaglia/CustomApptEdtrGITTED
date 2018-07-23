@@ -9,6 +9,7 @@
             Contains signatures for methods to subscribe and 
             unsubscribe each events available in the schedule
             </summary>
+            <exclude/>
         </member>
         <member name="T:Syncfusion.SfSchedule.XForms.DayLabelSettings">
             <summary>
@@ -79,7 +80,7 @@
             <summary>
             Gets or sets the TimeLabelColor. This is a bindable property.
             </summary>
-            <remarks>It's a readonly property and we need to set the <c>Palette</c> of the <c>WorkWeekViewSettings</c> class.</remarks>
+            <remarks>It's a read only property and we need to set the <c>Palette</c> of the <c>WorkWeekViewSettings</c> class.</remarks>
             <example>
             This sample code shows how to set the <c>TimeLabelColor</c> property of the chart. 
             <code>
@@ -257,6 +258,28 @@
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
         </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.DayViewSettings.StartHourProperty">
+            <summary>
+            Gets or sets the StartHour. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.DayViewSettings.StartHour">
+            <summary>
+            Gets or sets the StartHour for DayView.This is a bindable property.
+            </summary>
+            <value>The start hour.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.DayViewSettings.EndHourProperty">
+            <summary>
+            Gets or sets the EndHour. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.DayViewSettings.EndHour">
+            <summary>
+            Gets or sets the EndHour for DayView.This is a bindable property.
+            </summary>
+            <value>The end hour.</value>
+        </member>
         <member name="T:Syncfusion.SfSchedule.XForms.ScheduleView">
             <summary>
             Specifies the ScheduleViews available 
@@ -307,6 +330,29 @@
             This specifies the recurrence as Yearly. 
             </summary>
         </member>
+        <member name="T:Syncfusion.SfSchedule.XForms.AppointmentDisplayMode">
+            <summary>
+            Specifies the displaying mode for appointment in month view. 
+            </summary>
+            <remarks>
+            It will be applicable only for Xamarin.Forms.UWP desktop.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AppointmentDisplayMode.None">
+            <summary>
+            Specifies no appointment is displayed in view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AppointmentDisplayMode.Indicator">
+            <summary>
+            Specifies to displays the appointment as indicator.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AppointmentDisplayMode.Appointment">
+            <summary>
+            Specifies to displays the appointment as cell inlineview.
+            </summary>
+        </member>
         <member name="T:Syncfusion.SfSchedule.XForms.MonthNavigationDirections">
             <summary>
             Specifies the SFSwipeDirection available 
@@ -337,10 +383,76 @@
             This returns Overlay as ViewLayoutOptions.
             </summary>
         </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceRange.EndDate">
+            <summary>
+            Specifies that recurrence appointment will have the end date.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceRange.NoEndDate">
+            <summary>
+            Specifies that recurrence appointment will have the no end date.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceRange.Count">
+            <summary>
+            Specifies that recurrence appointment will have the recurrence count.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSchedule.XForms.WeekDays">
+            <summary>
+            Specifies the days on a week
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WeekDays.None">
+            <summary>
+            Specifies none of the day on a week.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WeekDays.Sunday">
+            <summary>
+            Specifies Sunday on a week.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WeekDays.Monday">
+            <summary>
+            Specifies Monday on a week.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WeekDays.Tuesday">
+            <summary>
+            Specifies Tuesday on a week.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WeekDays.Wednesday">
+            <summary>
+            Specifies Wednesday on a week.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WeekDays.Thursday">
+            <summary>
+            Specifies Thursday on a week.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WeekDays.Friday">
+            <summary>
+            Specifies Friday on a week.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WeekDays.Saturday">
+            <summary>
+            Specifies Saturday on a week.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WeekDays.WeekDays">
+            <summary>
+            Specifies every weekdays on a week.
+            </summary>
+        </member>
         <member name="T:Syncfusion.SfSchedule.XForms.IDateNavigation">
             <summary>
             Contains signatures for methods to navigate the view (Day, week, work week and month view) to required date programmatically.
             </summary>
+            <exclude/>
         </member>
         <member name="M:Syncfusion.SfSchedule.XForms.IDateNavigation.Forward(System.Object)">
             <summary>
@@ -387,17 +499,6 @@
             Gets or sets the <c>DateFormat</c> property.
             </summary>
         </member>
-        <member name="P:Syncfusion.SfSchedule.XForms.MonthLabelSettings.DateLabelSize">
-            <summary>
-            The <c>DateLabelSize</c> property is used to set the size for DateLabel in the MonthView. This is a bindable property.
-            </summary>
-            <value>This property takes the <see cref="T:System.Double"/> value.</value>
-        </member>
-        <member name="F:Syncfusion.SfSchedule.XForms.MonthLabelSettings.DateLabelSizeProperty">
-            <summary>
-            Gets or sets the <c>DateLabelSize</c> property.
-            </summary>
-        </member>
         <member name="P:Syncfusion.SfSchedule.XForms.MonthLabelSettings.DayFormat">
             <summary>
             The <c>DayFormat</c> property is used to set the format for Day in the MonthView. This is a bindable property.
@@ -417,6 +518,38 @@
         <member name="M:Syncfusion.SfSchedule.XForms.MonthViewSettings.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Syncfusion.SfSchedule.XForms.MonthViewSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthViewSettings.AppointmentDisplayMode">
+            <summary>
+            The <c>AppointmentDisplayMode</c> property is used to define the display mode for appointment in month view. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="P:Syncfusion.SfSchedule.XForms.MonthViewSettings.AppointmentDisplayMode"/> value.</value>
+            <remarks>
+            It will be applicable only for Xamarin.Forms.UWP desktop month view.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.MonthViewSettings.AppointmentDisplayModeProperty">
+            <summary>
+            Gets or sets the <c>AppointmentDisplayMode</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthViewSettings.AppointmentDisplayCount">
+            <summary>
+            The <c>AppointmentDisplayCount</c> property is used to define the maximum number of the appointment to be displayed in a month cell. This is a bindable property.
+            </summary>
+            <value>
+            This property takes the <see cref="P:Syncfusion.SfSchedule.XForms.MonthViewSettings.AppointmentDisplayCount"/> value.
+            For AppointmentDisplayCount value is 1 and month cell have more than 1 appointments, single appointment will be displayed and remaining appointments in month cell displayed in more appointments count.
+            If an AppointmentDisplayCount value is more than one, for an example value is 3 and month cell have more than 3 appointments, 2 appointments will be displayed and remaining appointments in month cell displayed in more appointments count.
+            </value>
+            <remarks>
+            It will be applicable only for Xamarin.Forms.UWP desktop month view while AppointmentDisplayMode as Appointment.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.MonthViewSettings.AppointmentDisplayCountProperty">
+            <summary>
+            Gets or sets the <c>AppointmentDisplayCount</c> property.
             </summary>
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.MonthViewSettings.ShowAppointmentsInline">
@@ -484,6 +617,61 @@
         <member name="F:Syncfusion.SfSchedule.XForms.MonthViewSettings.WeekNumberStyleProperty">
             <summary>
             Gets or sets the <c>WeekNumberStyle</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthViewSettings.TodayBackground">
+            <summary>
+            Gets or sets the today's circle background.
+            </summary>
+            <value>The today circle background.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.MonthViewSettings.TodayBackgroundProperty">
+            <summary>
+            The today's circle background property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthViewSettings.MonthCellTemplate">
+            <summary>
+            Gets or sets the month cell template for schedule month view.
+            </summary>
+            <value>The month cell template.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.MonthViewSettings.MonthCellTemplateProperty">
+            <summary>
+            MonthCell template property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthViewSettings.ShowAgendaView">
+            <summary>
+            The <c>ShowAgendaView</c> property is used to enable/disable the Agenda view in the month view. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.MonthViewSettings.ShowAgendaViewProperty">
+            <summary>
+            Gets or sets the <c>ShowAgendaView</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthViewSettings.AgendaItemTemplate">
+            <summary>
+            Gets or sets the agenda item template.
+            </summary>
+            <value>The agenda item template.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.MonthViewSettings.AgendaItemTemplateProperty">
+            <summary>
+            The agenda item template property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthViewSettings.AgendaViewStyle">
+            <summary>
+            Gets or sets the agenda view style.
+            </summary>
+            <value>The agenda view style.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.MonthViewSettings.AgendaViewStyleProperty">
+            <summary>
+            The agenda view style property.
             </summary>
         </member>
         <member name="T:Syncfusion.SfSchedule.XForms.NonAccessibleBlock">
@@ -555,7 +743,7 @@
             <summary>
             Gets or sets the type of the recurrence.
             </summary>
-            <value>This property takes the <see cref="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.RecurrenceType"/> value.</value>
+            <value>This property takes the <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceType"/> value.</value>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.RecurrenceTypeProperty">
             <summary>
@@ -567,6 +755,7 @@
             Gets or sets the range start date.
             </summary>
             <value>This property takes the <see cref="T:System.DateTime"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.RangeStartDateProperty">
             <summary>
@@ -578,6 +767,7 @@
             Gets or sets the range end date.
             </summary>
             <value>This property takes the <see cref="T:System.DateTime"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.RangeEndDateProperty">
             <summary>
@@ -589,6 +779,7 @@
             Gets or sets the daily N Days.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.DailyNDaysProperty">
             <summary>
@@ -600,6 +791,7 @@
             Gets or sets the generic month.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.GenericMonthProperty">
             <summary>
@@ -611,6 +803,7 @@
             Gets or sets the nth week.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.NthWeekProperty">
             <summary>
@@ -622,6 +815,7 @@
             Gets or sets the specific month.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.SpecificMonthProperty">
             <summary>
@@ -633,6 +827,7 @@
             Gets or sets the specific month day.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.SpecificMonthDayProperty">
             <summary>
@@ -644,6 +839,7 @@
             Gets or sets the week day.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.WeekDayProperty">
             <summary>
@@ -655,6 +851,7 @@
             Gets or sets the weekly every NW eeks.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.WeeklyEveryNWeeksProperty">
             <summary>
@@ -663,9 +860,10 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.MonthlyEveryNMonths">
             <summary>
-            Gets or sets the monthly every NM onths.
+            Gets or sets the monthly every NMonths.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.MonthlyEveryNMonthsProperty">
             <summary>
@@ -677,6 +875,7 @@
             Gets or sets the monthly nth week.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.MonthlyNthWeekProperty">
             <summary>
@@ -688,6 +887,7 @@
             Gets or sets the monthly specific month day.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.MonthlySpecificMonthDayProperty">
             <summary>
@@ -699,6 +899,7 @@
             Gets or sets the monthly week day.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.MonthlyWeekDayProperty">
             <summary>
@@ -710,6 +911,7 @@
             Gets or sets the yearly every N Years.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.YearlyEveryNYearsProperty">
             <summary>
@@ -721,6 +923,7 @@
             Gets or sets the yearly generic month.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.YearlyGenericMonthProperty">
             <summary>
@@ -732,6 +935,7 @@
             Gets or sets the yearly nth week.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.YearlyNthWeekProperty">
             <summary>
@@ -743,6 +947,7 @@
             Gets or sets the yearly specific month.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.YearlySpecificMonthProperty">
             <summary>
@@ -754,6 +959,7 @@
             Gets or sets the yearly specific month day.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.YearlySpecificMonthDayProperty">
             <summary>
@@ -765,6 +971,7 @@
             Gets or sets the yearly week day.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.YearlyWeekDayProperty">
             <summary>
@@ -785,7 +992,7 @@
         <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsDailyEveryNDays">
             <summary>
             Gets or sets a value indicating whether this
-            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is daily every ND ays.
+            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is daily every NDays.
             </summary>
             <value><c>true</c> if is daily every N Days; otherwise, <c>false</c>.</value>
         </member>
@@ -836,6 +1043,7 @@
             <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is range end date.
             </summary>
             <value><c>true</c> if is range end date; otherwise, <c>false</c>.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsRangeEndDateProperty">
             <summary>
@@ -848,6 +1056,7 @@
             <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is range no end date.
             </summary>
             <value><c>true</c> if is range no end date; otherwise, <c>false</c>.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsRangeNoEndDateProperty">
             <summary>
@@ -859,6 +1068,7 @@
             Gets or sets the range recurrence count.
             </summary>
             <value>This property takes the <see cref="T:System.Int32"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.RangeRecurrenceCountProperty">
             <summary>
@@ -871,6 +1081,7 @@
             <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is range recurrence count.
             </summary>
             <value><c>true</c> if is range recurrence count; otherwise, <c>false</c>.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsRangeRecurrenceCountProperty">
             <summary>
@@ -880,9 +1091,10 @@
         <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklySunday">
             <summary>
             Gets or sets a value indicating whether this
-            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly sunday.
+            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly Sunday.
             </summary>
-            <value><c>true</c> if is weekly sunday; otherwise, <c>false</c>.</value>
+            <value><c>true</c> if is weekly Sunday; otherwise, <c>false</c>.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklySundayProperty">
             <summary>
@@ -892,9 +1104,10 @@
         <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklyMonday">
             <summary>
             Gets or sets a value indicating whether this
-            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly monday.
+            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly Monday.
             </summary>
-            <value><c>true</c> if is weekly monday; otherwise, <c>false</c>.</value>
+            <value><c>true</c> if is weekly Monday; otherwise, <c>false</c>.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklyMondayProperty">
             <summary>
@@ -904,9 +1117,10 @@
         <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklyTuesday">
             <summary>
             Gets or sets a value indicating whether this
-            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly tuesday.
+            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly Tuesday.
             </summary>
-            <value><c>true</c> if is weekly tuesday; otherwise, <c>false</c>.</value>
+            <value><c>true</c> if is weekly Tuesday; otherwise, <c>false</c>.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklyTuesdayProperty">
             <summary>
@@ -916,9 +1130,10 @@
         <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklyWednesday">
             <summary>
             Gets or sets a value indicating whether this
-            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly wednesday.
+            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly Wednesday.
             </summary>
-            <value><c>true</c> if is weekly wednesday; otherwise, <c>false</c>.</value>
+            <value><c>true</c> if is weekly Wednesday; otherwise, <c>false</c>.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklyWednesdayProperty">
             <summary>
@@ -928,9 +1143,10 @@
         <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklyThursday">
             <summary>
             Gets or sets a value indicating whether this
-            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly thursday.
+            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly Thursday.
             </summary>
-            <value><c>true</c> if is weekly thursday; otherwise, <c>false</c>.</value>
+            <value><c>true</c> if is weekly Thursday; otherwise, <c>false</c>.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklyThursdayProperty">
             <summary>
@@ -940,9 +1156,10 @@
         <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklyFriday">
             <summary>
             Gets or sets a value indicating whether this
-            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly friday.
+            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly Friday.
             </summary>
-            <value><c>true</c> if is weekly friday; otherwise, <c>false</c>.</value>
+            <value><c>true</c> if is weekly Friday; otherwise, <c>false</c>.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklyFridayProperty">
             <summary>
@@ -952,11 +1169,112 @@
         <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklySaturday">
             <summary>
             Gets or sets a value indicating whether this
-            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly saturday.
+            <see cref="T:Syncfusion.SfSchedule.XForms.RecurrenceProperties"/> is weekly Saturday.
             </summary>
-            <value><c>true</c> if is weekly saturday; otherwise, <c>false</c>.</value>
+            <value><c>true</c> if is weekly Saturday; otherwise, <c>false</c>.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IsWeeklySaturdayProperty">
+            <summary>
+            Gets or sets the <c>IsWeeklySaturday</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.StartDate">
+            <summary>
+            Gets or sets the date to start the recurrence appointment.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.StartDateProperty">
+            <summary>
+            Gets or sets the <c>IsWeeklySaturday</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.RecurrenceCount">
+            <summary>
+            Gets or sets the count for recurring appointment.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.RecurrenceCountProperty">
+            <summary>
+            Gets or sets the <c>IsWeeklySaturday</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.EndDate">
+            <summary>
+            Gets or sets the date to end the recurrence appointment.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.EndDateProperty">
+            <summary>
+            Gets or sets the <c>IsWeeklySaturday</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.Interval">
+            <summary>
+            Gets or sets the day interval on which recurrence has to be set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.IntervalProperty">
+            <summary>
+            Gets or sets the <c>IsWeeklySaturday</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.RecurrenceRange">
+            <summary>
+            Gets or sets the type of the recurrence range for the time limit of recurrence appointment.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.RecurrenceRangeProperty">
+            <summary>
+            Gets or sets the <c>IsWeeklySaturday</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.WeekDays">
+            <summary>
+            Gets or sets the day/days in a week on which the appointment occurs.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.WeekDaysProperty">
+            <summary>
+            Gets or sets the <c>IsWeeklySaturday</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.Week">
+            <summary>
+            Gets or sets the week of month on which recurrence has to be set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.WeekProperty">
+            <summary>
+            Gets or sets the <c>IsWeeklySaturday</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.DayOfMonth">
+            <summary>
+            Gets or sets the day on which recurrence has to be set for every month.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.DayOfMonthProperty">
+            <summary>
+            Gets or sets the <c>IsWeeklySaturday</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.DayOfWeek">
+            <summary>
+            Gets or sets the day of week on which  recurrence has to be set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.DayOfWeekProperty">
+            <summary>
+            Gets or sets the <c>IsWeeklySaturday</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.RecurrenceProperties.Month">
+            <summary>
+            Gets or sets the specific month of year on which recurrence has to be set.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.RecurrenceProperties.MonthProperty">
             <summary>
             Gets or sets the <c>IsWeeklySaturday</c> property.
             </summary>
@@ -993,6 +1311,28 @@
             Gets or sets the <c>EndTime</c> property.
             </summary>
         </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointment.ActualStartTime">
+            <summary>
+            Gets the internal start time which is converted based on start time zone applied
+            </summary>
+            <value>This property takes the <see cref="T:System.DateTime"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.ScheduleAppointment.ActualStartTimeProperty">
+            <summary>
+            Gets or sets the <c>EndTime</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointment.ActualEndTime">
+            <summary>
+            Gets the internal end time which is converted based on end time zone applied
+            </summary>
+            <value>This property takes the <see cref="T:System.DateTime"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.ScheduleAppointment.ActualEndTimeProperty">
+            <summary>
+            Gets or sets the <c>EndTime</c> property.
+            </summary>
+        </member>
         <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointment.Subject">
             <summary>
             Gets or sets the subject.
@@ -1004,6 +1344,28 @@
             Gets or sets the <c>Subject</c> property.
             </summary>
         </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointment.StartTimeZone">
+            <summary>
+            Gets or sets the start time zone for the appointment.
+            </summary>
+            <value>This property takes the <see cref="T:System.String"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.ScheduleAppointment.StartTimeZoneProperty">
+            <summary>
+            Gets or sets the <c>StartTimeZone</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointment.EndTimeZone">
+             <summary>
+            Gets or sets the end time zone for the appointment.
+             </summary>
+             <value>This property takes the <see cref="T:System.String"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.ScheduleAppointment.EndTimeZoneProperty">
+            <summary>
+            Gets or sets the <c>StartTimeZone</c> property.
+            </summary>
+        </member>
         <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointment.Color">
             <summary>
             Gets or sets the color.
@@ -1013,6 +1375,17 @@
         <member name="F:Syncfusion.SfSchedule.XForms.ScheduleAppointment.ColorProperty">
             <summary>
             Gets or sets the <c>Color</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointment.MinHeight">
+            <summary>
+            Gets or sets the minimum height of the Appointment.
+            </summary>
+            <value>The minimum height.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.ScheduleAppointment.MinHeightProperty">
+            <summary>
+            The minimum height property.
             </summary>
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointment.IsAllDay">
@@ -1109,6 +1482,28 @@
             Gets or sets the <c>EndTimeMapping</c> property.
             </summary>
         </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.StartTimeZoneMapping">
+            <summary>
+            Gets and sets values for the mapping property for StartTimeZone.
+            </summary>
+            <value>This property takes the <see cref="T:System.String"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.StartTimeZoneMappingProperty">
+            <summary>
+            Gets or sets the <c>EndTimeMapping</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.EndTimeZoneMapping">
+            <summary>
+            Gets and sets values for the mapping property for EndTimeZone.
+            </summary>
+            <value>This property takes the <see cref="T:System.String"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.EndTimeZoneMappingProperty">
+            <summary>
+            Gets or sets the <c>EndTimeMapping</c> property.
+            </summary>
+        </member>
         <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.SubjectMapping">
             <summary>
             Gets and sets values for the mapping property for Subject.
@@ -1118,6 +1513,17 @@
         <member name="F:Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.SubjectMappingProperty">
             <summary>
             Gets or sets the <c>SubjectMapping</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.MinHeightMapping">
+            <summary>
+            Gets or sets the minimum height mapping.
+            </summary>
+            <value>The minimum height mapping.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.MinHeightMappingProperty">
+            <summary>
+            The minimum height mapping property.
             </summary>
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.ColorMapping">
@@ -1186,35 +1592,120 @@
             Gets or sets the <c>IsRecursiveMapping</c> property.
             </summary>
         </member>
-        <member name="T:Syncfusion.SfSchedule.XForms.NameSpaceDoc">
-            <summary>
-            SfSchedule control is applicable in this namespace.
-            </summary>	
-        </member>
         <member name="T:Syncfusion.SfSchedule.XForms.SfSchedule">
             <summary>
             Represents the SfSchedule that provides simple method to plan a process or list of events in a particular time.
             </summary>
         </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.SfSchedule.AppointmentTemplate">
+            <summary>
+            Gets or sets the appointment template for schedule appointments.
+            </summary>
+            <value>The appointment template.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.SfSchedule.AppointmentTemplateProperty">
+            <summary>
+            Appointment template property.
+            </summary>
+        </member>
         <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.ScheduleCellTapped">
             <summary>
-            Event that is raised when tapped on any appointment or timeslot or month cell of Schedule.
+            Event that is raised when tapped on any appointment or time slot or month cell of Schedule.
             </summary>
-            
+            <exclude/>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.SfSchedule.CellTappedCommandProperty">
+            <summary>
+            Schedule cell tapped command property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.SfSchedule.CellTappedCommand">
+            <summary>
+            Gets or sets the CellTappedCommand to be executed when schedule cell is tapped.
+            </summary>
+            <value>The cell tapped command.</value>
         </member>
         <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.CellTapped">
             <summary>
-            Event that is raised when tapped on any appointment or timeslot or month cell of Schedule.
+            Event that is raised when tapped on any appointment or time slot or month cell of Schedule.
             </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.SfSchedule.CellDoubleTappedCommandProperty">
+            <summary>
+            Schedule cell double tapped command property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.SfSchedule.CellDoubleTappedCommand">
+            <summary>
+            Gets or sets the CellDoubleTappedCommand to be executed when schedule cell is tapped twice.
+            </summary>
+            <value>The cell double tapped command.</value>
         </member>
         <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.CellDoubleTapped">
             <summary>
-            Event that is raised when tapped twice on any appointment or timeslot or month cell of Schedule.
+            Event that is raised when tapped twice on any appointment or time slot or month cell of Schedule.
             </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.SfSchedule.CellLongPressedCommandProperty">
+            <summary>
+            Schedule cell long pressed command property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.SfSchedule.CellLongPressedCommand">
+            <summary>
+            Gets or sets the CellLongPressedCommand to be executed when we hold or long press the schedule cell.
+            </summary>
+            <value>The cell long pressed command.</value>
         </member>
         <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.CellLongPressed">
             <summary>
-            Event that is raised when pressed and hold on any appointment or timeslot or month cell of Schedule.
+            Event that is raised when pressed and hold on any appointment or time slot or month cell of Schedule.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.SfSchedule.VisibleDatesChangedCommandProperty">
+            <summary>
+            The visible dates changed command property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.SfSchedule.VisibleDatesChangedCommand">
+            <summary>
+            Gets or sets the VisibleDatesChangedCommand to be executed when navigate or view type change of schedule.
+            </summary>
+            <value>The visible dates changed command.</value>
+        </member>
+        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.VisibleDatesChangedEvent">
+            <summary>
+            Event that is raised when visible dates changed due to date navigation or when view type changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.OnAppointmentLoadedEvent">
+            <summary>
+            Event that is raised when an appointment is loaded in the schedule view (day view, work view or month view).
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSchedule.XForms.SfSchedule.CanRaiseAppointmentLoadedEvent">
+            <summary>
+            To check Whether the AppointmentLoaded Event triggered or not.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.OnMonthCellLoadedEvent">
+            <summary>
+            Event that is raised when each cells (for every date) for month view of schedule loaded.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.OnMonthInlineLoadedEvent">
+            <summary>
+            Event that is raised while inline view is loaded when tapped on any date in the month view.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.OnMonthInlineAppointmentLoadedEvent">
+            <summary>
+            Event that is raised while list of appointments loaded in inline view  when tapped on any date in the month view.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.MonthInlineAppointmentTapped">
+            <summary>
+            Event that is raised when tapped on any appointment which are listed in month view of schedule.
             </summary>
         </member>
         <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.HeaderTapped">
@@ -1239,35 +1730,56 @@
             </summary>
             <param name="args">Arguments.</param>
         </member>
-        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.VisibleDatesChangedEvent">
+        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.AppointmentDragStarting">
             <summary>
-            Event that is raised when visible dates changed due to date navigation or when view type changed.
+            Event that is raised when start to drag the appointment.
             </summary>
         </member>
-        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.OnAppointmentLoadedEvent">
+        <member name="M:Syncfusion.SfSchedule.XForms.SfSchedule.CanRaiseAppointmentDragStartingEvent">
             <summary>
-            Event that is raised when an appointment is loaded in the schedule view (day view, work view or month view).
+            Cans the raise appointment drag starting event.
+            </summary>
+            <returns><c>true</c>, if raise appointment drag starting event was not null, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Syncfusion.SfSchedule.XForms.SfSchedule.RaiseAppointmentDragStartingEvent(Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs)">
+            <summary>
+            Raises the appointment drag starting event.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.AppointmentDragOver">
+            <summary>
+            Event is raised when appointment is dragging.
             </summary>
         </member>
-        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.OnMonthCellLoadedEvent">
+        <member name="M:Syncfusion.SfSchedule.XForms.SfSchedule.CanRaiseAppointmentDragOverEvent">
             <summary>
-            Event that is raised when each cells (for every date) for month view of schedule loaded.
+            Cans the raise appointment drag over event.
+            </summary>
+            <returns><c>true</c>, if raise appointment drag over event was not null, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Syncfusion.SfSchedule.XForms.SfSchedule.RaiseAppointmentDragOverEvent(Syncfusion.SfSchedule.XForms.AppointmentDragEventArgs)">
+            <summary>
+            Raises the appointment drag over event.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.AppointmentDrop">
+            <summary>
+            Event is raised when drop the schedule appointment.
             </summary>
         </member>
-        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.OnMonthInlineLoadedEvent">
+        <member name="M:Syncfusion.SfSchedule.XForms.SfSchedule.CanRaiseAppointmentDropEvent">
             <summary>
-            Event that is raised while inline view is loaded when tapped on any date in the month view.
+            Cans the raise appointment drop event.
             </summary>
+            <returns><c>true</c>, if raise appointment drop event was not null, <c>false</c> otherwise.</returns>
         </member>
-        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.OnMonthInlineAppointmentLoadedEvent">
+        <member name="M:Syncfusion.SfSchedule.XForms.SfSchedule.RaiseAppointmentDropEvent(Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs)">
             <summary>
-            Event that is raised while list of appointments loaded in inline view  when tapped on any date in the month view.
+            Raises the appointment drop event.
             </summary>
-        </member>
-        <member name="E:Syncfusion.SfSchedule.XForms.SfSchedule.MonthInlineAppointmentTapped">
-            <summary>
-            Event that is raised when tapped on any appointment which are listed in month view of schedule.
-            </summary>
+            <param name="args">Arguments.</param>
         </member>
         <member name="M:Syncfusion.SfSchedule.XForms.SfSchedule.Backward">
             <summary>
@@ -1367,6 +1879,17 @@
             <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.SfSchedule.EnableNavigationProperty">
+            <summary>
+            Gets or sets the <c>EnableNavigation</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.SfSchedule.TimeZone">
+            <summary>
+            The <c>TimeZone</c> property is used to set the time zone for the schedule control. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.String"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.SfSchedule.TimeZoneProperty">
             <summary>
             Gets or sets the <c>EnableNavigation</c> property.
             </summary>
@@ -1618,11 +2141,35 @@
             The <c>InlineViewLayout</c> property is used to define the View of the Schedule. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="P:Syncfusion.SfSchedule.XForms.SfSchedule.InlineViewLayout"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.SfSchedule.InlineViewLayoutProperty">
             <summary>
             Gets or sets the <c>InlineViewLayout</c> property.
             </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.SfSchedule.AllowAppointmentDragProperty">
+            <summary>
+            The allow appointment drag property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.SfSchedule.AllowAppointmentDrag">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfSchedule.XForms.SfSchedule"/> allow
+            appointment drag.
+            </summary>
+            <value><c>true</c> if allow appointment drag; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.SfSchedule.DragDropSettingsProperty">
+            <summary>
+            The drag drop settings property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.SfSchedule.DragDropSettings">
+            <summary>
+            Gets or sets the drag drop settings.
+            </summary>
+            <value>The drag drop settings.</value>
         </member>
         <member name="M:Syncfusion.SfSchedule.XForms.SfSchedule.GetDefaultValue``1(``0,``0,``0)">
             <summary>
@@ -1669,6 +2216,22 @@
             Tapped Month Cell has Recurrence appointment it will returns the parent recurrence appointment values. It will be null for Day/Week/WorkWeek views
             </remarks>
         </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.CellTappedEventArgs.IsMoreAppointments">
+            <summary>
+            Specifies whether more appointments are tapped or not in month view.
+            </summary>
+            <remarks>
+            It will be applicable only for Xamarin.Forms.UWP desktop month view cell tapped.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.CellTappedEventArgs.CancelNavigation">
+            <summary>
+            Specifies whether day view navigation should be disabled while clicking more appointments in month view.
+            </summary>
+            <remarks>
+            It will be applicable only for Xamarin.Forms.UWP desktop month view cell tapped.
+            </remarks>
+        </member>
         <member name="T:Syncfusion.SfSchedule.XForms.ScheduleTappedEventArgs">
             <summary>
             Represents properties of ScheduleTapped event.
@@ -1683,6 +2246,9 @@
             <summary>
             Represents properties of MonthInlineAppointmentTapped event.
             </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs.selectedAppointment">
+            <exclude/>
         </member>
         <member name="T:Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs">
             <summary>
@@ -1709,10 +2275,114 @@
             Represents properties of HeaderTappedEvent.
             </summary>
         </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.HeaderTappedEventArgs.DateTime">
+            <summary>
+            Returns the datetime of header tapped value
+            </summary>
+        </member>
         <member name="T:Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs">
             <summary>
             Represents properties of ViewHeaderTappedEvent.
             </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.DateTime">
+            <summary>
+            Returns the datetime of view header tapped value
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSchedule.XForms.MonthCellItem">
+            <summary>
+            Represents properties of MonthCellTemplate.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthCellItem.Date">
+            <summary>
+            Returns the datetime of month cell.
+            </summary>
+            <value>This property takes the <see cref="T:System.DateTime"/> value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthCellItem.Appointments">
+            <summary>
+            Returns month cell appointments values.
+            </summary>
+            <value>This property takes the <see cref="T:System.Collections.IEnumerable"/> value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthCellItem.IsLeadingDay">
+            <summary>
+            Returns the value indicating whether the date is next month date or not.
+            </summary>
+            <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthCellItem.IsTrailingDay">
+            <summary>
+            Returns the value indicating whether the date is previous month date or not.
+            </summary>
+            <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.MonthCellItem.IsBlockOutDay">
+            <summary>
+            Returns the value indicating whether the date is black out day or not.
+            </summary>
+            <value>This property takes the <see cref="T:System.Boolean"/> value.</value>
+        </member>
+        <member name="T:Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs">
+            <summary>
+            Drag starting event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs.Appointment">
+            <summary>
+            Gets the appointment.
+            </summary>
+            <value>The appointment.</value>
+        </member>
+        <member name="T:Syncfusion.SfSchedule.XForms.AppointmentDragEventArgs">
+            <summary>
+            Dragging event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AppointmentDragEventArgs.Appointment">
+            <summary>
+            Gets the appointment.
+            </summary>
+            <value>The appointment.</value>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AppointmentDragEventArgs.DraggingPoint">
+            <summary>
+            Gets the dragging point.
+            </summary>
+            <value>The dragging point.</value>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AppointmentDragEventArgs.DraggingTime">
+            <summary>
+            Gets the dragging time.
+            </summary>
+            <value>The dragging time.</value>
+        </member>
+        <member name="T:Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs">
+            <summary>
+            Drop event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.Appointment">
+            <summary>
+            Gets or sets the appointment.
+            </summary>
+            <value>The appointment.</value>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.DropTime">
+            <summary>
+            Gets or sets the drop time.
+            </summary>
+            <value>The drop time.</value>
+        </member>
+        <member name="T:Syncfusion.SfSchedule.XForms.NamespaceDoc">
+            <summary>
+            Provides classes and interfaces to create <see cref="T:Syncfusion.SfSchedule.XForms.SfSchedule"/> which enable a user to interact with <see cref="T:Syncfusion.SfSchedule.XForms.SfSchedule"/>.
+            The <see cref="T:Syncfusion.SfSchedule.XForms.SfSchedule"/> classes allow a user to create and manipulate the appointments in different views and performs the operations like swiping, rescheduling appointments through drag and drop, date restriction and customization.
+            </summary>
+            <seealso cref="!:https://help.syncfusion.com/xamarin/sfschedule/getting-started"/>
+            <exclude/>
         </member>
         <member name="T:Syncfusion.SfSchedule.XForms.WeekLabelSettings">
             <summary>
@@ -1776,7 +2446,7 @@
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.WeekLabelSettings.TimeLabelColorProperty">
             <summary>
-            Gets or sets the TimeLabelColor for weeklabels. This is a bindable property.
+            Gets or sets the TimeLabelColor for week labels. This is a bindable property.
             </summary>
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.WeekLabelSettings.TimeLabelColor">
@@ -1948,6 +2618,28 @@
             Gets or sets the AllDayAppointmentLayoutColor for WeekView. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WeekViewSettings.StartHourProperty">
+            <summary>
+            Gets or sets the StartHour. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.WeekViewSettings.StartHour">
+            <summary>
+            Gets or sets the StartHour for WeekView.This is a bindable property.
+            </summary>
+            <value>The start hour.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WeekViewSettings.EndHourProperty">
+            <summary>
+            Gets or sets the EndHour. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.WeekViewSettings.EndHour">
+            <summary>
+            Gets or sets the EndHour for WeekView.This is a bindable property.
+            </summary>
+            <value>The end hour.</value>
         </member>
         <member name="T:Syncfusion.SfSchedule.XForms.WorkWeekLabelSettings">
             <summary>
@@ -2190,6 +2882,28 @@
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
         </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WorkWeekViewSettings.StartHourProperty">
+            <summary>
+            Gets or sets the StartHour. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.WorkWeekViewSettings.StartHour">
+            <summary>
+            Gets or sets the StartHour for WorkWeekView.This is a bindable property.
+            </summary>
+            <value>The start hour.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.WorkWeekViewSettings.EndHourProperty">
+            <summary>
+            Gets or sets the EndHour. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.WorkWeekViewSettings.EndHour">
+            <summary>
+            Gets or sets the EndHour for WorkWeekView.This is a bindable property.
+            </summary>
+            <value>The end hour.</value>
+        </member>
         <member name="T:Syncfusion.SfSchedule.XForms.AppointmentStyle">
             <summary>
             Provides styling for Appointments.
@@ -2224,6 +2938,7 @@
             Gets or sets the size of the text.
             </summary>
             <value>The size of the text.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.AppointmentStyle.TextStyleProperty">
             <summary>
@@ -2243,6 +2958,7 @@
             Gets or sets the text style.
             </summary>
             <value>The text style.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.AppointmentStyle.BorderWidthProperty">
             <summary>
@@ -2327,6 +3043,11 @@
             </summary>
             <value>The font attributes of the text</value>
         </member>
+        <member name="M:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.#ctor">
+            <summary>
+            Provides styling options such as text color, font size, font family, font attributes and background color for month cell.
+            </summary>
+        </member>
         <member name="F:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.TextStyleProperty">
             <summary>
             Gets or sets the DateTextPosition. This is a bindable property.
@@ -2342,9 +3063,10 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.TextStyle">
             <summary>
-            Gets or sets the TextStyle for montcell date text. This is a bindable property.
+            Gets or sets the TextStyle for month cell date text. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Font"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.TextSizeProperty">
             <summary>
@@ -2361,9 +3083,10 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.TextSize">
             <summary>
-            Gets or sets the DateTextSize for monthcell date text. This is a bindable property.
+            Gets or sets the DateTextSize for month cell date text. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:System.Double"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.TextColorProperty">
             <summary>
@@ -2372,7 +3095,7 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.TextColor">
             <summary>
-            Gets or sets the TextColor for monthcell. This is a bindable property.
+            Gets or sets the TextColor for month cell. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
         </member>
@@ -2383,7 +3106,7 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.BackgroundColor">
             <summary>
-            Gets or sets the BackgroundColor for monthcell. This is a bindable property.
+            Gets or sets the BackgroundColor for month cell. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
         </member>
@@ -2394,7 +3117,7 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.TodayBackgroundColor">
             <summary>
-            Gets or sets the TodayBackgroundColor for monthcell. This is a bindable property.
+            Gets or sets the TodayBackgroundColor for month cell. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
         </member>
@@ -2427,7 +3150,7 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.PreviousMonthBackgroundColor">
             <summary>
-            Gets or sets the PreviousMonthBackgroundColor for monthcell. This is a bindable property.
+            Gets or sets the PreviousMonthBackgroundColor for month cell. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
         </member>
@@ -2438,7 +3161,7 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.NextMonthBackgroundColor">
             <summary>
-            Gets or sets the NextMonthBackgroundColor for monthcell. This is a bindable property.
+            Gets or sets the NextMonthBackgroundColor for month cell. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
         </member>
@@ -2466,7 +3189,7 @@
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.FontSizeProperty">
             <summary>
-            Gets or sets font size for Monthcell of SfSchedule.This is bindable property. 
+            Gets or sets font size for Month cell of SfSchedule.This is bindable property. 
             </summary>
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.MonthViewCellStyle.FontSize">
@@ -2526,6 +3249,7 @@
             Gets or sets the TextSize. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:System.Double"/> as value </value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.HeaderStyle.TextStyleProperty">
             <summary>
@@ -2545,6 +3269,7 @@
             Gets or sets the TextStyle. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Font"/> as value </value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.HeaderStyle.FontFamilyProperty">
             <summary>
@@ -2646,6 +3371,7 @@
             Gets or sets the Text Style for Day in ViewHeader of SfSchedule. This is a bindable property.
             </summary>
             <remarks>It's a readonly property and we need to set the <c>Palette</c> of the <c>WorkWeekViewSettings</c> class.</remarks>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.ViewHeaderStyle.DateTextColorProperty">
             <summary>
@@ -2676,6 +3402,7 @@
             Gets or sets the Text Style for Date in ViewHeader of SfSchedule. This is a bindable property.
             </summary>
             <remarks>It's a readonly property and we need to set the <c>Palette</c> of the <c>WorkWeekViewSettings</c> class.</remarks>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.ViewHeaderStyle.DayTextSizeProperty">
             <summary>
@@ -2695,6 +3422,7 @@
             Gets or sets the Text Size for Day in ViewHeader of SfSchedule. This is a bindable property.
             </summary>
             <remarks>It's a readonly property and we need to set the <c>Palette</c> of the <c>WorkWeekViewSettings</c> class.</remarks>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.ViewHeaderStyle.DateTextSizeProperty">
             <summary>
@@ -2714,6 +3442,7 @@
             Gets or sets the Text Size for Date in ViewHeader of SfSchedule. This is a bindable property.
             </summary>
             <remarks>It's a readonly property and we need to set the <c>Palette</c> of the <c>WorkWeekViewSettings</c> class.</remarks>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.ViewHeaderStyle.DayFontFamilyProperty">
             <summary>
@@ -2782,10 +3511,11 @@
             <summary>
             IClearObjects is a interface which clears the objects.
             </summary>
+            <exclude/>
         </member>
         <member name="T:Syncfusion.SfSchedule.XForms.CellStyle">
             <summary>
-            Represents the properties of CellStyle.
+            Provides styling options such as such as text color, font size, font family, font attributes and background color for cell.
             </summary>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.CellStyle.TextStyleProperty">
@@ -2803,13 +3533,14 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.CellStyle.TextStyle">
             <summary>
-            Gets or sets the TextStyle for Monthcell Date Text. This is a bindable property.
+            Gets or sets the TextStyle for Month cell Date Text. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Font"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.CellStyle.TextSizeProperty">
             <summary>
-            Gets or sets the DateTextSize for Monthcell Date Text. This is a bindable property.
+            Gets or sets the DateTextSize for Month cell Date Text. This is a bindable property.
             </summary>
         </member>
         <member name="M:Syncfusion.SfSchedule.XForms.CellStyle.OnTextSizeChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
@@ -2822,29 +3553,30 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.CellStyle.TextSize">
             <summary>
-            Gets or sets the DateTextSize for Monthcell Date Text. This is a bindable property.
+            Gets or sets the DateTextSize for Month cell Date Text. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:System.Double"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.CellStyle.TextColorProperty">
             <summary>
-            Gets or sets the TextColor for Monthcell Date Text. This is a bindable property.
+            Gets or sets the TextColor for Month cell Date Text. This is a bindable property.
             </summary>
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.CellStyle.TextColor">
             <summary>
-            Gets or sets the TextColor for Monthcell Date Text. This is a bindable property.
+            Gets or sets the TextColor for Month cell Date Text. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.CellStyle.BackgroundColorProperty">
             <summary>
-            Gets or sets the BackgroundColor for Monthcell. This is a bindable property.
+            Gets or sets the BackgroundColor for Month cell. This is a bindable property.
             </summary>
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.CellStyle.BackgroundColor">
             <summary>
-            Gets or sets the BackgroundColor for Monthcell. This is a bindable property.
+            Gets or sets the BackgroundColor for Month cell. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
         </member>
@@ -2926,6 +3658,7 @@
             Gets or sets the TextSize for MonthInlineView Appointment. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:System.Double"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.MonthInlineViewStyle.TextStyleProperty">
             <summary>
@@ -2945,6 +3678,7 @@
             Gets or sets the TextStyle for MonthInlineView Appointment. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Font"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.MonthInlineViewStyle.TimeTextColorProperty">
             <summary>
@@ -3012,6 +3746,11 @@
             </summary>
             <value>This property takes the<see cref="T:Xamarin.Forms.FontAttributes"/>value.</value>
         </member>
+        <member name="T:Syncfusion.SfSchedule.XForms.SelectionStyle">
+            <summary>
+            Provides styling options such as background color, border thickness, border corner radius and border color for Selection.
+            </summary>
+        </member>
         <member name="F:Syncfusion.SfSchedule.XForms.SelectionStyle.BackgroundColorProperty">
             <summary>
             Gets or sets the BackgroundColor. This is a bindable property.
@@ -3019,7 +3758,7 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.SelectionStyle.BackgroundColor">
             <summary>
-            Gets or sets the BackgroundColor for Selected Cell or timeslot. This is a bindable property.
+            Gets or sets the BackgroundColor for Selected Cell or time slot. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:System.Double"/> value.</value>
         </member>
@@ -3030,7 +3769,7 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.SelectionStyle.BorderThickness">
             <summary>
-            Gets or sets the BorderWidth for Selected cell or Timeslot. This is a bindable property.
+            Gets or sets the BorderWidth for Selected cell or Time slot. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:System.Double"/> value.</value>
         </member>
@@ -3041,7 +3780,7 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.SelectionStyle.BorderCornerRadius">
             <summary>
-            Gets or sets the BorderCornerRadius for Selected cell or Timeslot. This is a bindable property.
+            Gets or sets the BorderCornerRadius for Selected cell or Time slot. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:System.Double"/> value.</value>
         </member>
@@ -3052,9 +3791,14 @@
         </member>
         <member name="P:Syncfusion.SfSchedule.XForms.SelectionStyle.BorderColor">
             <summary>
-            Gets or sets the BorderColor for Selected cell or Timeslot. This is a bindable property.
+            Gets or sets the BorderColor for Selected cell or Time slot. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="M:Syncfusion.SfSchedule.XForms.WeekNumberStyle.#ctor">
+            <summary>
+            Provides styling option such as text color, font family, font size, font attributes and background color for week number in month view.
+            </summary>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.WeekNumberStyle.TextColorProperty">
             <summary>
@@ -3096,6 +3840,7 @@
             Gets or sets the TextSize for weeknumber Text. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:System.Double"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.WeekNumberStyle.TextStyleProperty">
             <summary>
@@ -3115,6 +3860,7 @@
             Gets or sets the TextStyle for Weeknumber Text. This is a bindable property.
             </summary>
             <value>This property takes the <see cref="T:Xamarin.Forms.Font"/> value.</value>
+            <exclude/>
         </member>
         <member name="F:Syncfusion.SfSchedule.XForms.WeekNumberStyle.FontFamilyProperty">
             <summary>
@@ -3144,6 +3890,284 @@
         <member name="P:Syncfusion.SfSchedule.XForms.WeekNumberStyle.FontAttributes">
             <summary>
             Gets or set font attributes for WeekNumber Text.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSchedule.XForms.AgendaViewStyle">
+            <summary>
+            Provides Styling for Agenda view Appointments.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.SubjectFontColorProperty">
+            <summary>
+            Gets or sets the SubjectFontColor for Agenda View Appointment. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.SubjectFontColor">
+            <summary>
+            Gets or sets the SubjectFontColor for  Agenda View Appointment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.BackgroundColorProperty">
+            <summary>
+            Gets or sets the BackgroundColor for  Agenda View Panel. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.BackgroundColor">
+            <summary>
+            Gets or sets the BackgroundColor for  Agenda View Panel. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.TimeFontColorProperty">
+            <summary>
+            Gets or sets the TimeFontColor for  Agenda View Appointment. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.TimeFontColor">
+            <summary>
+            Gets or sets the TimeFontColor for  Agenda View Appointment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.TimeFontFamilyProperty">
+            <summary>
+            Gets or sets font family for  Agenda View Appointment.This is bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.TimeFontFamily">
+            <summary>
+            Gets or sets font family for  Agenda View Appointment.This is a bindable property. 
+            </summary>
+            <value>This property takes the <see cref="T:System.String"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.TimeFontAttributesProperty">
+            <summary>
+            Gets or sets FontAttributes.This is bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.TimeFontAttributes">
+            <summary>
+            Gets or sets font attributes for Agenda View Appointment.
+            </summary>
+            <value>This property takes the<see cref="T:Xamarin.Forms.FontAttributes"/>value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.TimeFontSizeProperty">
+            <summary>
+            Gets or sets the TimeFontSizeProperty for  Agenda View Appointment. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.TimeFontSize">
+            <summary>
+            Gets or sets the TimeFontSize for Agenda View Appointment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.Double"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.TimeFontFormatProperty">
+            <summary>
+            Gets or sets the TimeFontFormatProperty for Agenda View Appointment. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.TimeFontFormat">
+            <summary>
+            Gets or sets the TimeFontFormat for Agenda View Appointment. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:System.String"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.SubjectFontFamilyProperty">
+            <summary>
+            Gets or sets font family for Agenda View Appointment.This is bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.SubjectFontFamily">
+            <summary>
+            Gets or sets font family for Agenda View Appointment.This is a bindable property. 
+            </summary>
+            <value>This property takes the <see cref="T:System.String"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.SubjectFontSizeProperty">
+            <summary>
+            Gets or sets the FontSize for Agenda View Appointment.This is bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.SubjectFontSize">
+            <summary>
+            Gets or sets font size for Agenda View.
+            </summary>
+            <value>This property takes the <see cref="T:System.Double"/>value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.SubjectFontAttributesProperty">
+            <summary>
+            Gets or sets FontAttributes.This is bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.SubjectFontAttributes">
+            <summary>
+            Gets or sets font attributes for Agenda View Appointment.
+            </summary>
+            <value>This property takes the<see cref="T:Xamarin.Forms.FontAttributes"/>value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.DateFontColorProperty">
+            <summary>
+            The date text color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.DateFontColor">
+            <summary>
+            Gets or sets the color of the date text.
+            </summary>
+            <value>The color of the date text.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.DateFontFormatProperty">
+            <summary>
+            The date text format property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.DateFontFormat">
+            <summary>
+            Gets or sets the date text format.
+            </summary>
+            <value>The date text format.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.DateFontFamilyProperty">
+            <summary>
+            The date text style property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.DateFontFamily">
+            <summary>
+            Gets or sets the date text style.
+            </summary>
+            <value>The date text style.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.DateFontSizeProperty">
+            <summary>
+            The date text size property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.DateFontSize">
+            <summary>
+            Gets or sets the size of the date text.
+            </summary>
+            <value>The size of the date text.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.DateFontAttributesProperty">
+            <summary>
+            Gets or sets FontAttributes.This is bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.DateFontAttributes">
+            <summary>
+            Gets or sets font attributes for Agenda View Appointment.
+            </summary>
+            <value>This property takes the<see cref="T:Xamarin.Forms.FontAttributes"/>value.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.AgendaViewStyle.HeaderHeightProperty">
+            <summary>
+            The date text height property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.AgendaViewStyle.HeaderHeight">
+            <summary>
+            Gets or sets the height of the date text.
+            </summary>
+            <value>The height of the date text.</value>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.DragDropSettings.AllowNavigate">
+            <summary>
+            Gets or sets a value indicating whether this
+            <see cref="T:Syncfusion.SfSchedule.XForms.SfSchedule.DragAndDropSettings"/> allow navigate.
+            </summary>
+            <value><c>true</c> if allow navigate; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.DragDropSettings.AllowNavigateProperty">
+            <summary>
+            The allow navigate property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.DragDropSettings.AllowScroll">
+            <summary>
+            Gets or sets a value indicating whether this
+            <see cref="T:Syncfusion.SfSchedule.XForms.SfSchedule.DragAndDropSettings"/> allow scroll.
+            </summary>
+            <value><c>true</c> if allow scroll; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.DragDropSettings.AllowScrollProperty">
+            <summary>
+            The allow scroll property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.DragDropSettings.ShowTimeIndicator">
+            <summary>
+            Gets or sets a value indicating whether this
+            <see cref="T:Syncfusion.SfSchedule.XForms.SfSchedule.DragAndDropSettings"/> show time indicator.
+            </summary>
+            <value><c>true</c> if show time indicator; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.DragDropSettings.ShowTimeIndicatorProperty">
+            <summary>
+            The show time indicator property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.DragDropSettings.AutoNavigationDelay">
+            <summary>
+            Gets or sets the auto navigation delay.
+            </summary>
+            <value>The auto navigation delay.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.DragDropSettings.AutoNavigationDelayProperty">
+            <summary>
+            The auto navigation delay property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.DragDropSettings.TimeIndicatorStyle">
+            <summary>
+            Gets or sets the time indicator style.
+            </summary>
+            <value>The time indicator style.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.DragDropSettings.TimeIndicatorStyleProperty">
+            <summary>
+            The time indicator style property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfSchedule.XForms.TimeIndicatorStyle">
+            <summary>
+            Provides support to customize the Time Text indicator which can be visible at the 
+            Time text slot while dragging the Appointment 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.TimeIndicatorStyle.TextSize">
+            <summary>
+            Gets or sets the size of the text.
+            </summary>
+            <value>The size of the text.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.TimeIndicatorStyle.TextSizeProperty">
+            <summary>
+            The text size property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.TimeIndicatorStyle.TextFormat">
+            <summary>
+            Gets or sets the text format.
+            </summary>
+            <value>The text format.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.TimeIndicatorStyle.TextFormatProperty">
+            <summary>
+            The text format property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSchedule.XForms.TimeIndicatorStyle.TextColor">
+            <summary>
+            Gets or sets the color of the text.
+            </summary>
+            <value>The color of the text.</value>
+        </member>
+        <member name="F:Syncfusion.SfSchedule.XForms.TimeIndicatorStyle.TextColorProperty">
+            <summary>
+            The text color property.
             </summary>
         </member>
     </members>

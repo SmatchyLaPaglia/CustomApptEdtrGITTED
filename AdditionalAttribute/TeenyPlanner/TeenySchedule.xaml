@@ -4,7 +4,7 @@
              x:Class        ="TeenyPlanner.TeenySchedule"
              xmlns:local    ="clr-namespace:AdditionalAttribute"
              xmlns:schedule ="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
-             BackgroundColor="Silver">
+             BackgroundColor="Transparent">
     <Grid x:Name="grid_layout">
         <Grid.RowDefinitions>
             <RowDefinition Height="7*" />

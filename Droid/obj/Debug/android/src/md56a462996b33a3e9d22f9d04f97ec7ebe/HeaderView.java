@@ -10,6 +10,7 @@ public class HeaderView
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"";
 		mono.android.Runtime.register ("Com.Syncfusion.Schedule.HeaderView, Syncfusion.SfSchedule.Android", HeaderView.class, __md_methods);
@@ -46,6 +47,14 @@ public class HeaderView
 		if (getClass () == HeaderView.class)
 			mono.android.TypeManager.Activate ("Com.Syncfusion.Schedule.HeaderView, Syncfusion.SfSchedule.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2, p3 });
 	}
+
+
+	public boolean onInterceptTouchEvent (android.view.MotionEvent p0)
+	{
+		return n_onInterceptTouchEvent (p0);
+	}
+
+	private native boolean n_onInterceptTouchEvent (android.view.MotionEvent p0);
 
 
 	public void onMeasure (int p0, int p1)

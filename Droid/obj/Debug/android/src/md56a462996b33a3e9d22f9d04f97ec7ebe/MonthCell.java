@@ -10,6 +10,7 @@ public class MonthCell
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_onDraw:(Landroid/graphics/Canvas;)V:GetOnDraw_Landroid_graphics_Canvas_Handler\n" +
 			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"";
@@ -47,6 +48,14 @@ public class MonthCell
 		if (getClass () == MonthCell.class)
 			mono.android.TypeManager.Activate ("Com.Syncfusion.Schedule.MonthCell, Syncfusion.SfSchedule.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2, p3 });
 	}
+
+
+	public void onDraw (android.graphics.Canvas p0)
+	{
+		n_onDraw (p0);
+	}
+
+	private native void n_onDraw (android.graphics.Canvas p0);
 
 
 	public void onMeasure (int p0, int p1)

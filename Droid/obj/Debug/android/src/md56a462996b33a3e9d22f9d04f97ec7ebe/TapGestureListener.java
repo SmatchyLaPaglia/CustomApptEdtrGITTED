@@ -11,7 +11,7 @@ public class TapGestureListener
 	static {
 		__md_methods = 
 			"n_onDoubleTap:(Landroid/view/MotionEvent;)Z:GetOnDoubleTap_Landroid_view_MotionEvent_Handler\n" +
-			"n_onSingleTapUp:(Landroid/view/MotionEvent;)Z:GetOnSingleTapUp_Landroid_view_MotionEvent_Handler\n" +
+			"n_onSingleTapConfirmed:(Landroid/view/MotionEvent;)Z:GetOnSingleTapConfirmed_Landroid_view_MotionEvent_Handler\n" +
 			"n_onLongPress:(Landroid/view/MotionEvent;)V:GetOnLongPress_Landroid_view_MotionEvent_Handler\n" +
 			"";
 		mono.android.Runtime.register ("Com.Syncfusion.Schedule.TapGestureListener, Syncfusion.SfSchedule.Android", TapGestureListener.class, __md_methods);
@@ -34,12 +34,12 @@ public class TapGestureListener
 	private native boolean n_onDoubleTap (android.view.MotionEvent p0);
 
 
-	public boolean onSingleTapUp (android.view.MotionEvent p0)
+	public boolean onSingleTapConfirmed (android.view.MotionEvent p0)
 	{
-		return n_onSingleTapUp (p0);
+		return n_onSingleTapConfirmed (p0);
 	}
 
-	private native boolean n_onSingleTapUp (android.view.MotionEvent p0);
+	private native boolean n_onSingleTapConfirmed (android.view.MotionEvent p0);
 
 
 	public void onLongPress (android.view.MotionEvent p0)

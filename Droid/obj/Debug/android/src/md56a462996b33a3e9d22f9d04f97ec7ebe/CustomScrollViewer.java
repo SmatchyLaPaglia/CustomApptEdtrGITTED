@@ -12,6 +12,7 @@ public class CustomScrollViewer
 		__md_methods = 
 			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
+			"n_onScrollChanged:(IIII)V:GetOnScrollChanged_IIIIHandler\n" +
 			"";
 		mono.android.Runtime.register ("Com.Syncfusion.Schedule.CustomScrollViewer, Syncfusion.SfSchedule.Android", CustomScrollViewer.class, __md_methods);
 	}
@@ -63,6 +64,14 @@ public class CustomScrollViewer
 	}
 
 	private native void n_onLayout (boolean p0, int p1, int p2, int p3, int p4);
+
+
+	public void onScrollChanged (int p0, int p1, int p2, int p3)
+	{
+		n_onScrollChanged (p0, p1, p2, p3);
+	}
+
+	private native void n_onScrollChanged (int p0, int p1, int p2, int p3);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

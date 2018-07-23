@@ -10,9 +10,9 @@ public class MonthLayout
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
-			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"";
 		mono.android.Runtime.register ("Com.Syncfusion.Schedule.MonthLayout, Syncfusion.SfSchedule.Android", MonthLayout.class, __md_methods);
 	}
@@ -50,6 +50,14 @@ public class MonthLayout
 	}
 
 
+	public boolean onInterceptTouchEvent (android.view.MotionEvent p0)
+	{
+		return n_onInterceptTouchEvent (p0);
+	}
+
+	private native boolean n_onInterceptTouchEvent (android.view.MotionEvent p0);
+
+
 	public void onMeasure (int p0, int p1)
 	{
 		n_onMeasure (p0, p1);
@@ -64,14 +72,6 @@ public class MonthLayout
 	}
 
 	private native void n_onLayout (boolean p0, int p1, int p2, int p3, int p4);
-
-
-	public boolean onInterceptTouchEvent (android.view.MotionEvent p0)
-	{
-		return n_onInterceptTouchEvent (p0);
-	}
-
-	private native boolean n_onInterceptTouchEvent (android.view.MotionEvent p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

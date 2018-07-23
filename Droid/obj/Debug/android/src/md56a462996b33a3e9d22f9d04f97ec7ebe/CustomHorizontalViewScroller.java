@@ -11,9 +11,9 @@ public class CustomHorizontalViewScroller
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
-			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_onDown:(Landroid/view/MotionEvent;)Z:GetOnDown_Landroid_view_MotionEvent_Handler:Android.Views.GestureDetector/IOnGestureListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_onFling:(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z:GetOnFling_Landroid_view_MotionEvent_Landroid_view_MotionEvent_FFHandler:Android.Views.GestureDetector/IOnGestureListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_onLongPress:(Landroid/view/MotionEvent;)V:GetOnLongPress_Landroid_view_MotionEvent_Handler:Android.Views.GestureDetector/IOnGestureListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
@@ -57,6 +57,14 @@ public class CustomHorizontalViewScroller
 	}
 
 
+	public boolean onInterceptTouchEvent (android.view.MotionEvent p0)
+	{
+		return n_onInterceptTouchEvent (p0);
+	}
+
+	private native boolean n_onInterceptTouchEvent (android.view.MotionEvent p0);
+
+
 	public void onMeasure (int p0, int p1)
 	{
 		n_onMeasure (p0, p1);
@@ -71,14 +79,6 @@ public class CustomHorizontalViewScroller
 	}
 
 	private native void n_onLayout (boolean p0, int p1, int p2, int p3, int p4);
-
-
-	public boolean onInterceptTouchEvent (android.view.MotionEvent p0)
-	{
-		return n_onInterceptTouchEvent (p0);
-	}
-
-	private native boolean n_onInterceptTouchEvent (android.view.MotionEvent p0);
 
 
 	public boolean onDown (android.view.MotionEvent p0)

@@ -7,6 +7,9 @@ namespace AdditionalAttribute
 	{
 		public App()
 		{
+			//Register Syncfusion license
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("OTU2NkAzMTM2MmUzMjJlMzBoTEhJUmoyM1AzRWNNaTZNUUhpRFRWbjZzUXJ0RFZmU0lLakIvblhwV2hRPQ==");
+
 			InitializeComponent();
 
 			//MainPage = new AdditionalAttributePage();

@@ -4,7 +4,11 @@
              x:Class             ="TeenyPlanner.TeenyPlannerPage"
              xmlns:teeny         ="clr-namespace:TeenyPlanner"
              xmlns:ios           ="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-             Title               ="Safe Area"
              ios:Page.UseSafeArea="true">
+    <ContentPage.BackgroundColor>
+        <OnPlatform x:TypeArguments="Color"
+                    iOS            ="Navy"
+                    Android        ="Yellow" />
+    </ContentPage.BackgroundColor>
     <teeny:TeenySchedule />
 </ContentPage>

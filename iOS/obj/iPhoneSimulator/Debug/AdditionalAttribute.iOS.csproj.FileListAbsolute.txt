@@ -64,6 +64,7 @@
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/AdditionalAttribute.iOS.exe
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/AdditionalAttribute.iOS.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/AdditionalAttribute.dll
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Syncfusion.Licensing.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Syncfusion.SfSchedule.iOS.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Syncfusion.SfSchedule.XForms.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Syncfusion.SfSchedule.XForms.iOS.dll
@@ -73,11 +74,9 @@
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/AdditionalAttribute.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.pdb
-/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll.mdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.xml
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.pdb
-/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll.mdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.xml
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/Syncfusion.SfSchedule.XForms.xml
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/bin/iPhoneSimulator/Debug/ar/Xamarin.Forms.Platform.iOS.resources.dll
@@ -122,5 +121,6 @@
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.4/optimized/
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/obj/iPhoneSimulator/Debug/AdditionalAttribute.iOS.csprojResolveAssemblyReference.cache
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/obj/iPhoneSimulator/Debug/AdditionalAttribute.iOS.csproj.CoreCompileInputs.cache
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/obj/iPhoneSimulator/Debug/AdditionalAttribute.iOS.exe
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/iOS/obj/iPhoneSimulator/Debug/AdditionalAttribute.iOS.pdb
