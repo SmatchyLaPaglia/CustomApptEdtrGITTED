@@ -31,12 +31,17 @@
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/bin/Debug/Xamarin.Forms.Xaml.pdb
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/bin/Debug/Xamarin.Forms.Xaml.xml
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/bin/Debug/Syncfusion.SfSchedule.XForms.xml
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.csprojResolveAssemblyReference.cache
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/App.xaml.g.cs
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttributePage.xaml.g.cs
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/EditorLayout.xaml.g.cs
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/TeenyPlanner/TeenySchedule.xaml.g.cs
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/TeenyPlanner/TeenyPlannerPage.xaml.g.cs
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/TeenyPlanner/AnimationTestPage.xaml.g.cs
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/TeenyPlanner/PreparedDispatch.xaml.g.cs
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/TeenyPlanner/PreparedDispatchAnimatorView.xaml.g.cs
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.csproj.CoreCompileInputs.cache
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/XamlC.stamp
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.pdb
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/TeenyPlanner/AnimatePreparedDispatchView.xaml.g.cs

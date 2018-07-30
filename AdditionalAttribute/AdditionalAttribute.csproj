@@ -42,6 +42,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeenyPlanner\AnimationTestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeenyPlanner\PreparedDispatch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeenyPlanner\PreparedDispatchAnimatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeenyPlanner\AnimatePreparedDispatchView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -65,6 +81,21 @@
       <DependentUpon>TeenyPlannerPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="TeenyPlanner\EditorPlaceholder.cs" />
+    <Compile Include="TeenyPlanner\AnimationTestPage.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
+      <DependentUpon>..\..\..\..\DispatchXapp\DispatchXapp\TeenyPlanner\TeenyPlanner\AnimationTestPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TeenyPlanner\PreparedDispatch.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
+      <DependentUpon>..\..\..\..\DispatchXapp\DispatchXapp\TeenyPlanner\TeenyPlanner\PreparedDispatch.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TeenyPlanner\PreparedDispatchAnimatorView.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
+      <DependentUpon>..\..\..\..\DispatchXapp\DispatchXapp\TeenyPlanner\TeenyPlanner\PreparedDispatchAnimatorView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TeenyPlanner\AnimatePreparedDispatchView.xaml.cs">
+      <DependentUpon>AnimatePreparedDispatchView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

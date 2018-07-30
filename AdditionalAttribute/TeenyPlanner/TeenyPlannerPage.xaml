@@ -12,4 +12,5 @@
                     Android        ="Yellow" />
     </ContentPage.BackgroundColor>
     <teeny:TeenySchedule Padding="5"/>
+    <teeny:AnimatePreparedDispatchView/>
 </ContentPage>
