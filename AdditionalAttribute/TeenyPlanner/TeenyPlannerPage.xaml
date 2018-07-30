@@ -8,9 +8,11 @@
              >
     <ContentPage.BackgroundColor>
         <OnPlatform x:TypeArguments="Color"
-                    iOS            ="Yellow"
-                    Android        ="Yellow" />
+                    iOS            ="Gray"
+                    Android        ="Gray" />
     </ContentPage.BackgroundColor>
+    <Grid>
     <teeny:TeenySchedule Padding="5"/>
     <teeny:AnimatePreparedDispatchView/>
+        </Grid>
 </ContentPage>

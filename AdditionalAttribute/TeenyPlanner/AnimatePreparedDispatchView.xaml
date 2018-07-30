@@ -2,12 +2,12 @@
 <ContentView xmlns ="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TeenyPlanner.AnimatePreparedDispatchView"
-             BackgroundColor="Green">
-        <Grid BackgroundColor="Aqua">
+             BackgroundColor="Transparent">
+        <Grid BackgroundColor="Transparent">
        <Grid.RowDefinitions>
             <RowDefinition Height="2.75*" />
-            <RowDefinition Height="4.5*" />
-            <RowDefinition Height="2.75*" />
+            <RowDefinition Height="6.5*" />
+            <RowDefinition Height="0.75*" />
         </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.25*" />
@@ -15,7 +15,146 @@
             <ColumnDefinition Width="0.25*" />
         </Grid.ColumnDefinitions>
        <Grid Grid.Row="1" Grid.Column="1">
-            <Label VerticalOptions="FillAndExpand" BackgroundColor="Olive"/>
+    <!--Main big grid-->
+    <Grid RowSpacing="0">
+        <Grid.ColumnDefinitions>
+            <!--            <ColumnDefinition Width="0.125*" />
+            <ColumnDefinition Width="9.75*" />
+            <ColumnDefinition Width="0.125*" />-->
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*" />
+            <!--                        <RowDefinition Height="0.125*" />-->
+            <RowDefinition Height="9*" />
+            <RowDefinition Height="0*" />
+            <!--                        <RowDefinition Height="0.125*" />-->
+        </Grid.RowDefinitions>
+        <!--Main background framey frame-->
+        <Frame Grid.Row       ="1"
+               CornerRadius   ="12"
+               BackgroundColor="White"
+               Opacity        ="0.8" />
+        <!--Grid for foreground elements-->
+        <Grid Grid.RowSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.25*" />
+                <ColumnDefinition Width="9.5*" />
+                <ColumnDefinition Width="0.25*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="4*" />
+                <RowDefinition Height="1.65*" />
+                <RowDefinition Height="1.65*" />
+                <RowDefinition Height="0.7*" />
+            </Grid.RowDefinitions>
+            <!--Panel behind top label-->
+            <Frame Grid.Column      ="1"
+                   Grid.Row         ="1"
+                   CornerRadius     ="12"
+                   OutlineColor="White"
+                   HasShadow="false"
+                   BackgroundColor  ="Transparent" />
+            <!--top label-->
+            <Label Grid.Column            ="1"
+                   Grid.Row               ="1"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions        ="CenterAndExpand"
+                   Text                   ="Dispatch Prepared"
+                   FontAttributes         ="Bold"
+                   FontSize               ="Medium"
+                   BackgroundColor        ="Transparent" />
+            <!--The panel behind the stack layout for the address-->
+            <Frame 
+                   Grid.Column      ="1"
+                   Grid.Row         ="2"
+                   BackgroundColor  ="White"
+                   CornerRadius     ="12" />
+            <!--The grid for making insets for the stack layout-->
+            <Grid Grid.Row   ="2"
+                  Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="9.1*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="6*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <!--The stack layout for the details-->
+                <StackLayout Grid.Column    ="1"
+                             Grid.Row       ="1"
+                             VerticalOptions="FillAndExpand">
+                    <Label BackgroundColor="Transparent"
+                           Text           ="August 13th, 2018 at 3:30 pm"
+                           FontSize       ="Medium"
+                           VerticalOptions="CenterAndExpand" />
+                    <Label BackgroundColor="Transparent"
+                           Text           ="1414 Mill House Way&#x0a;Greenville, SC 28218"
+                           FontSize       ="Medium"
+                           VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+            </Grid>
+                                                    <!--Revist It Button-->
+            <Frame Grid.Row="3" Grid.Column="1" CornerRadius="12"/>
+            <Button Grid.Row       ="3"
+                    Opacity        ="0.95"
+                    Grid.Column    ="1"
+                    CornerRadius   ="12"
+                    BackgroundColor="Transparent"
+                    VerticalOptions="FillAndExpand"
+                    TextColor="Black"
+                    Text           ="Revise It"
+                    FontSize       ="Medium" />
+            <!--Dispatch! Button-->
+            <Frame Grid.Row="4" Grid.Column="1" CornerRadius="12"/>
+            <Button Grid.Row       ="4"
+                    Opacity        ="0.95"
+                    Grid.Column    ="1"
+                    CornerRadius   ="12"
+                    BackgroundColor="Blue"
+                    TextColor      ="White"
+                    VerticalOptions="FillAndExpand"
+                    Text           ="Dispatch It"
+                    FontSize       ="Medium" />
+
         </Grid>
+        <!--      <Frame Grid.ColumnSpan  ="2"
+               Grid.RowSpan     ="2"
+               CornerRadius     ="13"
+               IsClippedToBounds="true"
+               BackgroundColor  ="White" />
+        <Label Grid.RowSpan   ="2"
+               Grid.ColumnSpan="2"
+               BackgroundColor="Transparent"
+               Text           ="Dispatch Prepared"
+               FontSize       ="Medium" />
+        <Grid Grid.RowSpan   ="1"
+              Grid.ColumnSpan="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="9.1*" />
+                <ColumnDefinition Width="0.5*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.75*" />
+                <RowDefinition Height="0.75*" />
+                <RowDefinition Height="7*" />
+                <RowDefinition Height="0.75*" />
+                <RowDefinition Height="0.75*" />
+            </Grid.RowDefinitions>
+            <Button FontSize       ="Medium"
+                    Grid.Row       ="3"
+                    Grid.RowSpan   ="2"
+                    Grid.Column    ="1"
+                    CornerRadius   ="13"
+                    BackgroundColor="Blue"
+                    Text           ="Send It Out"
+                    TextColor      ="White" />
+        </Grid>-->
+    </Grid>        </Grid>
     </Grid>
 </ContentView>
