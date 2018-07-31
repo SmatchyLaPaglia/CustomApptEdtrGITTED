@@ -36,15 +36,15 @@
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/Xamarin.Forms.Xaml.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Runtime.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.ComponentModel.Composition.dll
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Diagnostics.Debug.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Diagnostics.Tools.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.ObjectModel.dll
-/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Diagnostics.Debug.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Collections.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Runtime.Extensions.dll
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Reflection.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Threading.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Threading.Tasks.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Collections.Concurrent.dll
-/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Reflection.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Linq.Expressions.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Reflection.Primitives.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/Droid/obj/Debug/android/assets/System.Dynamic.Runtime.dll

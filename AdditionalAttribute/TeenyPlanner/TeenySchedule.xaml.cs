@@ -10,6 +10,7 @@ namespace TeenyPlanner
     {
         string editorPlaceholderText = "enter address";
         Color editorPlaceholderTextColor = Color.Gray;
+        public Button SendButton { get; set; }
 
         //Start app and setup placholder editor text and style
         public TeenySchedule()
@@ -17,6 +18,7 @@ namespace TeenyPlanner
             InitializeComponent();
             setupEditorPlaceholder();
             setupTimePicker();
+            SendButton = sendDispatchButton;
         }
 
         //Remove editor placeholder text when focused
@@ -43,6 +45,7 @@ namespace TeenyPlanner
         void Handle_TimePickerPlaceholder_Tapped(object sender, System.EventArgs e)
         {
             timePickerPlaceholderFrame.IsVisible = false;
+            timePickerFrame.IsVisible = true;
             timePicker.Focus();
         }
 
@@ -61,8 +64,8 @@ namespace TeenyPlanner
                     sendDispatchButtonFrame.BackgroundColor = Color.Blue;
                 } else {
                     sendDispatchButton.IsEnabled = false;
-                    sendDispatchButton.BackgroundColor = Color.White;
-                    sendDispatchButtonFrame.BackgroundColor = Color.White;
+                    sendDispatchButton.BackgroundColor = Color.Transparent;
+                    sendDispatchButtonFrame.BackgroundColor = Color.Transparent;
                     sendDispatchButton.Style = this.Resources["textStyle"] as Style;
                 }
             }

@@ -42,10 +42,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeenyPlanner\AnimationTestPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="TeenyPlanner\PreparedDispatch.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -58,6 +54,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="flower.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -81,10 +78,6 @@
       <DependentUpon>TeenyPlannerPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="TeenyPlanner\EditorPlaceholder.cs" />
-    <Compile Include="TeenyPlanner\AnimationTestPage.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
-      <DependentUpon>..\..\..\..\DispatchXapp\DispatchXapp\TeenyPlanner\TeenyPlanner\AnimationTestPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="TeenyPlanner\PreparedDispatch.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
       <DependentUpon>..\..\..\..\DispatchXapp\DispatchXapp\TeenyPlanner\TeenyPlanner\PreparedDispatch.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -120,6 +113,7 @@
   <ItemGroup>
     <Folder Include="ViewModel\" />
     <Folder Include="TeenyPlanner\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.3.1.0.637273\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.637273\build\netstandard1.0\Xamarin.Forms.targets')" />

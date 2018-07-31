@@ -4,6 +4,7 @@ using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Diagnostics;
 
 namespace TeenyPlanner
 {
@@ -12,6 +13,32 @@ namespace TeenyPlanner
         public TeenyPlannerPage()
         {
             InitializeComponent();
+            background.Source = ImageSource.FromResource("AdditionalAttribute.flower.jpg");
+                         
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            teenySchedule.SendButton.Clicked += (s, e) => {
+                Debug.WriteLine("dat button got cleeeeked!!");
+            };
+            Debug.WriteLine(this.Padding.Top);
+            Debug.WriteLine(On<Xamarin.Forms.PlatformConfiguration.iOS>().SafeAreaInsets().Top);
+            var safeInsets = new Thickness();
+            switch (Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                    safeInsets = On<Xamarin.Forms.PlatformConfiguration.iOS>().SafeAreaInsets();
+                    Debug.WriteLine("yup we is in iOS yes");
+                    Debug.WriteLine(safeInsets.Bottom.ToString(), safeInsets.Top.ToString());
+
+                    break;
+                default:
+                    break;
+            }
+
+            mainGrid.Padding = safeInsets;
         }
     }
 }

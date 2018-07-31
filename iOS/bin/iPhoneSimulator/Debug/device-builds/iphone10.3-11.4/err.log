@@ -1,0 +1,29 @@
+2018-07-31 15:41:53.304 AdditionalAttribute.iOS[42559:1297094] Xamarin.iOS: Added IP to look for the IDE: 127.0.0.1
+2018-07-31 15:41:53.304 AdditionalAttribute.iOS[42559:1297094] Xamarin.iOS: IDE Port: 55255 Transport: WiFi
+2018-07-31 15:41:53.304 AdditionalAttribute.iOS[42559:1297094] Xamarin.iOS: Socket error while connecting to IDE on 127.0.0.1:55255: Connection refused
+2018-07-31 15:41:53.305 AdditionalAttribute.iOS[42559:1296945] Xamarin.iOS: Debugger not loaded (disabled).
+2018-07-31 15:41:53.306 AdditionalAttribute.iOS[42559:1296945] Xamarin.iOS: Profiler not loaded (disabled)
+2018-07-31 15:41:53.365 AdditionalAttribute.iOS[42559:1296945] Xamarin.iOS: Added dllmap for objc_msgSend
+2018-07-31 15:41:55.077 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:41:55.095 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:41:55.112 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:41:55.546 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:41:55.582 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:41:55.956 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:41:55.957 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:41:55.957 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:41:55.957 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:41:56.655 AdditionalAttribute.iOS[42559:1296945] 0
+2018-07-31 15:41:56.656 AdditionalAttribute.iOS[42559:1296945] 44
+2018-07-31 15:41:56.656 AdditionalAttribute.iOS[42559:1296945] yup we is in iOS yes
+2018-07-31 15:41:56.656 AdditionalAttribute.iOS[42559:1296945] 34
+2018-07-31 15:41:56.657 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:42:03.856 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:42:03.858 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:42:03.981 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:42:04.217 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:42:04.218 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:42:04.220 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:42:04.354 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:42:04.355 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
+2018-07-31 15:42:04.365 AdditionalAttribute.iOS[42559:1296945] Handle_PropertyChanged was called
