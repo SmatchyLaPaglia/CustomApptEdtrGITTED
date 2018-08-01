@@ -21,7 +21,6 @@ namespace TeenyPlanner
             base.OnAppearing();
 
             teenySchedule.SendButton.Clicked += (s, e) => {
-                Debug.WriteLine("dat button got cleeeeked!!");
                 animatingView.AnimateIn();
             };
 

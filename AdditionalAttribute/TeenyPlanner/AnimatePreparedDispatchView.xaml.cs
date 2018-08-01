@@ -22,6 +22,8 @@ namespace TeenyPlanner
                 PreparedDispatchGrid.TranslateTo(0, 0, 400, Easing.CubicInOut);
                 ViewIsVisible = true;
             }
+
+            InputTransparent = false;
         }
 
         protected override void OnSizeAllocated(double width, double height)
