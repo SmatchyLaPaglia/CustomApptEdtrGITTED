@@ -20,9 +20,7 @@ namespace TeenyPlanner
         {
             base.OnAppearing();
 
-            teenySchedule.SendButton.Clicked += (s, e) => {
-                animatingView.AnimateIn();
-            };
+            ConfigureSendButtonAction();
 
             Debug.WriteLine(this.Padding.Top);
             Debug.WriteLine(On<Xamarin.Forms.PlatformConfiguration.iOS>().SafeAreaInsets().Top);
@@ -37,6 +35,14 @@ namespace TeenyPlanner
             }
 
             mainGrid.Padding = safeInsets;
+        }
+
+        private void ConfigureSendButtonAction() {
+            animatingView.DispatchTime.Text = teenySchedule.ThisTimePicker.Time.ToString();
+            animatingView.DispatchData.Text = teenySchedule.ThisEditor.Text.ToString();
+            teenySchedule.SendButton.Clicked += (s, e) => {
+                animatingView.AnimateIn();
+            };
         }
     }
 }

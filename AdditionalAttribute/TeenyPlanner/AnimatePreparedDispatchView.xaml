@@ -20,7 +20,7 @@
         <Grid x:Name="PreparedDispatchGrid"
             Grid.Row   ="1"
               Grid.Column="1"
-              TranslationX="400">
+              TranslationX="0">
             <!--Right now a redundant grid layer, used for different layout-->
             <Grid RowSpacing="0">
 <!--Row definitions, includes some 0-height rows for experimenting-->
@@ -57,7 +57,7 @@
                            HasShadow      ="false"
                            BackgroundColor="Transparent" />
                     <!--top label-->
-                    <Label Grid.Column            ="1"
+                    <Label  Grid.Column            ="1"
                            Grid.Row               ="1"
                            HorizontalTextAlignment="Center"
                            VerticalOptions        ="CenterAndExpand"
@@ -87,11 +87,11 @@
                         <StackLayout Grid.Column    ="1"
                                      Grid.Row       ="1"
                                      VerticalOptions="FillAndExpand">
-                            <Label BackgroundColor="Transparent"
+                            <Label x:Name="dispatchTime" BackgroundColor="Transparent"
                                    Text           ="August 13th, 2018 at 3:30 pm"
                                    FontSize       ="Medium"
                                    VerticalOptions="CenterAndExpand" />
-                            <Label BackgroundColor="Transparent"
+                            <Label x:Name="dispatchData" BackgroundColor="Transparent"
                                    Text           ="1414 Mill House Way&#xA;Greenville, SC 28218"
                                    FontSize       ="Medium"
                                    VerticalOptions="CenterAndExpand" />

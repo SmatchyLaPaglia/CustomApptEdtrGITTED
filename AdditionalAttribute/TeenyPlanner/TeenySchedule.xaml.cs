@@ -10,6 +10,9 @@ namespace TeenyPlanner
     {
         string editorPlaceholderText = "enter address";
         Color editorPlaceholderTextColor = Color.Gray;
+        public TimePicker ThisTimePicker { get; set; }
+        public Editor ThisEditor { get; set; }
+
         public Button SendButton { get; set; }
 
         //Start app and setup placholder editor text and style
@@ -19,6 +22,8 @@ namespace TeenyPlanner
             setupEditorPlaceholder();
             setupTimePicker();
             SendButton = sendDispatchButton;
+            ThisTimePicker = timePicker;
+            ThisEditor = addressEditor;
         }
 
         //Remove editor placeholder text when focused
