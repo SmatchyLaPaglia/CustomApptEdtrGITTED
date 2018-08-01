@@ -19,7 +19,8 @@
         <!--The grid containing the prepared dispatch view-->
         <Grid x:Name="PreparedDispatchGrid"
             Grid.Row   ="1"
-              Grid.Column="1">
+              Grid.Column="1"
+              TranslationX="400">
             <!--Right now a redundant grid layer, used for different layout-->
             <Grid RowSpacing="0">
 <!--Row definitions, includes some 0-height rows for experimenting-->

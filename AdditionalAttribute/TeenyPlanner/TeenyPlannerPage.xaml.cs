@@ -14,15 +14,17 @@ namespace TeenyPlanner
         {
             InitializeComponent();
             background.Source = ImageSource.FromResource("AdditionalAttribute.flower.jpg");
-                         
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
+
             teenySchedule.SendButton.Clicked += (s, e) => {
                 Debug.WriteLine("dat button got cleeeeked!!");
+                animatingView.AnimateIn();
             };
+
             Debug.WriteLine(this.Padding.Top);
             Debug.WriteLine(On<Xamarin.Forms.PlatformConfiguration.iOS>().SafeAreaInsets().Top);
             var safeInsets = new Thickness();
@@ -30,9 +32,6 @@ namespace TeenyPlanner
             {
                 case Device.iOS:
                     safeInsets = On<Xamarin.Forms.PlatformConfiguration.iOS>().SafeAreaInsets();
-                    Debug.WriteLine("yup we is in iOS yes");
-                    Debug.WriteLine(safeInsets.Bottom.ToString(), safeInsets.Top.ToString());
-
                     break;
                 default:
                     break;
