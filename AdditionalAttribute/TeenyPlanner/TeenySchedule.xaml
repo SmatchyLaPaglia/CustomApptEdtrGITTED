@@ -60,10 +60,11 @@
                CornerRadius     ="13"
                Padding          ="7"
                IsClippedToBounds="true"
+               HasShadow="false"
                BackgroundColor  ="Transparent"
                IsVisible        ="false">
-            <TimePicker x:Name         ="timePicker"
-                        PropertyChanged="Handle_PropertyChanged" />
+            <TimePicker Style="{StaticResource textStyle}" x:Name         ="timePicker"
+                        PropertyChanged="Handle_PropertyChanged" BackgroundColor="Transparent" />
         </Frame>
         <!--TimePicker has placeholder-text label in front, it vanishes and passes focus when tapped-->
         <Frame x:Name           ="timePickerPlaceholderFrame"
