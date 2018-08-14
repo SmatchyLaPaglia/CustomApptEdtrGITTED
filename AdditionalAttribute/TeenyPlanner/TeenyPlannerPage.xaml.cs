@@ -38,9 +38,12 @@ namespace TeenyPlanner
         }
 
         private void ConfigureSendButtonAction() {
-            animatingView.DispatchTime.Text = teenySchedule.ThisTimePicker.Time.ToString();
-            animatingView.DispatchData.Text = teenySchedule.ThisEditor.Text.ToString();
             teenySchedule.SendButton.Clicked += (s, e) => {
+                var timeString = teenySchedule.
+                var timeString = DateTime.Today.Add(teenySchedule.ThisTimePicker.Time).ToString(teenySchedule.ThisTimePicker.Format);
+                animatingView.DispatchTime.Text = timeString;
+                animatingView.DispatchData.Text = teenySchedule.EditorText;
+                teenySchedule.SetSendButtonActive(false);
                 animatingView.AnimateIn();
             };
         }

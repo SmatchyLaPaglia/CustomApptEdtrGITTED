@@ -31,7 +31,6 @@
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/bin/Debug/AdditionalAttribute.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/packages/Xamarin.Forms.3.1.0.637273/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Diagnostics.Debug.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Diagnostics.Tools.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/packages/Syncfusion.Xamarin.SfSchedule.16.2.0.42/lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Resources.ResourceManager.dll
@@ -47,5 +46,6 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Threading.Tasks.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Threading.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Facades/System.Diagnostics.Debug.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/packages/Syncfusion.Xamarin.SfSchedule.16.2.0.42/lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.iOS.dll
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/packages/Syncfusion.Xamarin.SfSchedule.16.2.0.42/lib/Xamarin.iOS10/Syncfusion.SfSchedule.iOS.dll

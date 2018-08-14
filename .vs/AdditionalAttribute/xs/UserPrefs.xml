@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{EF9F2D97-3EBA-4A47-A6FD-47C06DADCFBD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdditionalAttribute/AdditionalAttributePage.xaml">
     <Files>
-      <File FileName="AdditionalAttribute/TeenyPlanner/AnimatePreparedDispatchView.xaml" Line="23" Column="31" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/AnimatePreparedDispatchView.xaml.cs" Line="10" Column="9" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml" Line="95" Column="54" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs" Line="93" Column="47" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml.cs" Line="42" Column="48" />
       <File FileName="AdditionalAttribute/TeenyPlanner/PreparedDispatchAnimatorView.xaml.cs" Line="29" Column="72" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml" Line="15" Column="15" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml.cs" Line="16" Column="92" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml" Line="121" Column="15" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs" Line="79" Column="10" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/PreparedDispatchAnimatorView.xaml" Line="21" Column="15" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/AnimatePreparedDispatchView.xaml.cs" Line="16" Column="37" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/AnimatePreparedDispatchView.xaml" Line="130" Column="15" />
+      <File FileName="AdditionalAttribute/AdditionalAttributePage.xaml" Line="40" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

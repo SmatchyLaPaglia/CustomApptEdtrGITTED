@@ -8,28 +8,51 @@ namespace TeenyPlanner
 {
     public partial class TeenySchedule : ContentView
     {
-        string editorPlaceholderText = "enter address";
+        public string EditorText { get {
+                Debug.WriteLine("TeenySchedule: EditorText: " + addressEditor.Text);
+                return addressEditor.Text;
+            } 
+            set {
+                addressEditor.Text = value;
+            } 
+        }
+        string editorPlaceholderText = "enter shmaddress";
         Color editorPlaceholderTextColor = Color.Gray;
-        public TimePicker ThisTimePicker { get; set; }
-        public Editor ThisEditor { get; set; }
-
-        public Button SendButton { get; set; }
+        public TimePicker ThisTimePicker
+        {
+            get
+            {
+                return timePicker;
+            }
+        }
+        public Editor ThisEditor
+        {
+            get
+            {
+                return addressEditor;
+            }
+        }
+        public Button SendButton
+        {
+            get
+            {
+                return sendDispatchButton;
+            }
+        }
 
         //Start app and setup placholder editor text and style
         public TeenySchedule()
         {
             InitializeComponent();
-            setupEditorPlaceholder();
-            setupTimePicker();
-            SendButton = sendDispatchButton;
-            ThisTimePicker = timePicker;
-            ThisEditor = addressEditor;
+            SetupEditorPlaceholder();
+            SetupTimePicker();
+            BindingContext = this;
         }
 
         //Remove editor placeholder text when focused
         void Handle_Focused(object sender, Xamarin.Forms.FocusEventArgs e)
         {
-            if (addressEditor.Text == editorPlaceholderText)
+            if (EditorText == editorPlaceholderText)
             {
                 addressEditor.Text = "";
                 addressEditor.TextColor = Color.Black;
@@ -39,9 +62,10 @@ namespace TeenyPlanner
         //Reset editor placeholder text if editor is empty
         void Handle_Unfocused(object sender, Xamarin.Forms.FocusEventArgs e)
         {
-            if (addressEditor.Text == "")
+            Debug.WriteLine("TeenySchedule: Handle_Unfocused: addressEditor.Text: " + EditorText);
+            if (String.IsNullOrWhiteSpace(EditorText))
             {
-                setupEditorPlaceholder();
+                SetupEditorPlaceholder();
                 return;
             }
         }
@@ -57,33 +81,52 @@ namespace TeenyPlanner
         //Determines whether or not the send dispatch button should be enabled
         void Handle_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-                Debug.WriteLine("Handle_PropertyChanged was called");
-            if (addressEditor != null) {
-                var editorTextIsValid = addressEditor.Text != editorPlaceholderText && String.IsNullOrWhiteSpace(addressEditor.Text) == false;
+            Debug.WriteLine("Handle_PropertyChanged was called");
+            if (addressEditor != null)
+            {
+                var editorTextIsValid = EditorText != editorPlaceholderText && String.IsNullOrWhiteSpace(addressEditor.Text) == false;
                 var timeHasBeenSet = timePicker.Time != TimeSpan.Zero;
-                if (editorTextIsValid && timeHasBeenSet) {
-                    sendDispatchButton.IsEnabled = true;
-                    sendDispatchButton.TextColor = Color.White;
-                    sendDispatchButton.BackgroundColor = Color.Blue;
-
-                    sendDispatchButtonFrame.BackgroundColor = Color.Blue;
-                } else {
-                    sendDispatchButton.IsEnabled = false;
-                    sendDispatchButton.BackgroundColor = Color.Transparent;
-                    sendDispatchButtonFrame.BackgroundColor = Color.Transparent;
-                    sendDispatchButton.Style = this.Resources["textStyle"] as Style;
+                //var hopefully = DateTime.Today.Add(timePicker.Time).ToString(timePicker.Format);
+                //Debug.WriteLine("TeenySchedule: Handle_PropertyChanged: timePicker.Time: " + hopefully);
+                if (editorTextIsValid && timeHasBeenSet)
+                {
+                    SetSendButtonActive(true);
+                }
+                else
+                {
+                    SetSendButtonActive(false);
                 }
             }
         }
 
         //DRY for setting placeholder editor text and color
-        void setupEditorPlaceholder()
+        void SetupEditorPlaceholder()
         {
-            addressEditor.Text = editorPlaceholderText;
+            EditorText = editorPlaceholderText;
+            addressEditor.Text = EditorText;
             addressEditor.TextColor = editorPlaceholderTextColor;
         }
 
-        void setupTimePicker() {
+
+        public void SetSendButtonActive(bool shouldOrShouldNot){
+            sendDispatchButton.IsEnabled = shouldOrShouldNot;
+            if (shouldOrShouldNot == true) {
+                SetButtonColor(Color.Blue);
+                sendDispatchButton.TextColor = Color.White;
+            } else {
+                SetButtonColor(Color.Transparent);
+                sendDispatchButton.Style = this.Resources["textStyle"] as Style;
+            }
+        }
+
+        //DRY for setting button color
+        void SetButtonColor(Color color) {
+            sendDispatchButton.BackgroundColor = color;
+            sendDispatchButtonFrame.BackgroundColor = color;
+        }
+
+        void SetupTimePicker()
+        {
             timePicker.Time = TimeSpan.Zero;
         }
     }
