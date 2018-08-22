@@ -9,6 +9,14 @@ namespace TeenyPlanner
         public bool ViewIsVisible { get; set; }
         public Label DispatchTime { get; set; }
         public Label DispatchData { get; set; }
+        public Button DispatchItButton
+        {
+            get
+            {
+                return dispatchItButton;
+            }
+        }
+        bool ShouldShowForDebugging = false;
 
         public AnimatePreparedDispatchView()
         {
@@ -17,6 +25,8 @@ namespace TeenyPlanner
             ViewIsVisible = false;
             DispatchTime = dispatchTime;
             DispatchData = dispatchData;
+            //Set this to true to see the layout in the xaml preview:
+            //ShouldShowForDebugging = true;
         }
 
         public void AnimateIn()
@@ -33,6 +43,11 @@ namespace TeenyPlanner
         protected override void OnSizeAllocated(double width, double height)
         {
             base.OnSizeAllocated(width, height);
+
+            if (ShouldShowForDebugging) {
+                this.BackgroundColor = Color.Peru;
+                return;
+            }
 
             if (PreparedDispatchGrid == null) {
                 return;

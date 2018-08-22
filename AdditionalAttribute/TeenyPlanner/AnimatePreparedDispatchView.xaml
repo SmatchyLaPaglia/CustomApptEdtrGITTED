@@ -3,8 +3,18 @@
              xmlns:x        ="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class        ="TeenyPlanner.AnimatePreparedDispatchView"
              BackgroundColor="Transparent">
+    <!--Setting style for info labels-->
+    <View.Resources>
+        <Style x:Key     ="infoLabelStyle"
+               TargetType="Label">
+            <Setter Property="FontSize"
+                    Value   ="Small" />
+            <Setter Property="TextColor"
+                    Value   ="Gray" />
+        </Style>
+    </View.Resources>
     <!--The grid for the entire page-->
-    <Grid BackgroundColor="Transparent">
+    <Grid>
         <!--Defining the size of the prepared dispatch view -->
         <Grid.RowDefinitions>
             <RowDefinition Height="2.75*" />
@@ -17,13 +27,17 @@
             <ColumnDefinition Width="0.25*" />
         </Grid.ColumnDefinitions>
         <!--The grid containing the prepared dispatch view-->
-        <Grid x:Name="PreparedDispatchGrid"
-            Grid.Row   ="1"
-              Grid.Column="1"
+        <Grid x:Name      ="PreparedDispatchGrid"
+              Grid.Row    ="1"
+              Grid.Column ="1"
               TranslationX="0">
+<!--Comment out the above and uncomment below to see the layout in the preview-->
+            <!--        <Grid x:Name     ="PreparedDispatchGrid"
+              Grid.Row   ="1"
+              Grid.Column="1">-->
             <!--Right now a redundant grid layer, used for different layout-->
             <Grid RowSpacing="0">
-<!--Row definitions, includes some 0-height rows for experimenting-->
+                <!--Row definitions, includes some 0-height rows for experimenting-->
                 <Grid.RowDefinitions>
                     <RowDefinition Height="0*" />
                     <RowDefinition Height="9*" />
@@ -57,7 +71,7 @@
                            HasShadow      ="false"
                            BackgroundColor="Transparent" />
                     <!--top label-->
-                    <Label  Grid.Column            ="1"
+                    <Label Grid.Column            ="1"
                            Grid.Row               ="1"
                            HorizontalTextAlignment="Center"
                            VerticalOptions        ="CenterAndExpand"
@@ -79,19 +93,25 @@
                             <ColumnDefinition Width="0.5*" />
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="2*" />
-                            <RowDefinition Height="6*" />
-                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="1*" />
+                            <RowDefinition Height="8*" />
+                            <RowDefinition Height="1*" />
                         </Grid.RowDefinitions>
                         <!--The stack layout for the details-->
                         <StackLayout Grid.Column    ="1"
                                      Grid.Row       ="1"
                                      VerticalOptions="FillAndExpand">
-                            <Label x:Name="dispatchTime" BackgroundColor="Transparent"
+                            <Label Style="{StaticResource Key=infoLabelStyle}"
+                                   Text ="Appointment Time" />
+                            <Label x:Name         ="dispatchTime"
+                                   BackgroundColor="Transparent"
                                    Text           ="August 13th, 2018 at 3:30 pm"
                                    FontSize       ="Medium"
                                    VerticalOptions="CenterAndExpand" />
-                            <Label x:Name="dispatchData" BackgroundColor="Transparent"
+                            <Label Style="{StaticResource Key=infoLabelStyle}"
+                                   Text ="Address" />
+                            <Label x:Name         ="dispatchData"
+                                   BackgroundColor="Transparent"
                                    Text           ="1414 Mill House Way&#xA;Greenville, SC 28218"
                                    FontSize       ="Medium"
                                    VerticalOptions="CenterAndExpand" />
@@ -114,7 +134,7 @@
                     <Frame Grid.Row    ="4"
                            Grid.Column ="1"
                            CornerRadius="12" />
-                    <Button Grid.Row       ="4"
+                    <Button x:Name="dispatchItButton" Grid.Row       ="4"
                             Opacity        ="0.95"
                             Grid.Column    ="1"
                             CornerRadius   ="12"
