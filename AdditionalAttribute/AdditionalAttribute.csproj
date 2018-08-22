@@ -46,6 +46,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeenyPlanner\PreparedDispatchAnimatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeenyPlanner\AnimatePreparedDispatchView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -76,6 +80,10 @@
     <Compile Include="TeenyPlanner\EditorPlaceholder.cs" />
     <Compile Include="TeenyPlanner\PreparedDispatch.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
       <DependentUpon>..\..\..\..\DispatchXapp\DispatchXapp\TeenyPlanner\TeenyPlanner\PreparedDispatch.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TeenyPlanner\PreparedDispatchAnimatorView.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
+      <DependentUpon>..\..\..\..\DispatchXapp\DispatchXapp\TeenyPlanner\TeenyPlanner\PreparedDispatchAnimatorView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="TeenyPlanner\AnimatePreparedDispatchView.xaml.cs">

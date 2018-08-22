@@ -2,11 +2,11 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="AdditionalAttribute/App.xaml.cs">
     <Files>
       <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml" Line="15" Column="15" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml.cs" Line="44" Column="85" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs" Line="35" Column="1" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenyPlannerPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml.cs" Line="1" Column="1" />
       <File FileName="AdditionalAttribute/TeenyPlanner/TeenySchedule.xaml" Line="125" Column="15" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/AnimatePreparedDispatchView.xaml.cs" Line="10" Column="48" />
-      <File FileName="AdditionalAttribute/TeenyPlanner/AnimatePreparedDispatchView.xaml" Line="137" Column="38" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/AnimatePreparedDispatchView.xaml.cs" Line="1" Column="1" />
+      <File FileName="AdditionalAttribute/TeenyPlanner/AnimatePreparedDispatchView.xaml" Line="130" Column="15" />
       <File FileName="AdditionalAttribute/App.xaml" Line="7" Column="1" />
       <File FileName="AdditionalAttribute/App.xaml.cs" Line="16" Column="38" />
     </Files>

@@ -38,6 +38,7 @@
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/TeenyPlanner/TeenySchedule.xaml.g.cs
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/TeenyPlanner/TeenyPlannerPage.xaml.g.cs
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/TeenyPlanner/PreparedDispatch.xaml.g.cs
+/Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/TeenyPlanner/PreparedDispatchAnimatorView.xaml.g.cs
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.csproj.CoreCompileInputs.cache
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/XamlC.stamp
 /Users/jesseonbookofe/Documents/Xamarin/CustomApptEdtrGITTED/AdditionalAttribute/obj/Debug/AdditionalAttribute.dll
