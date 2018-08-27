@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace AdditionalAttribute
 {
@@ -71,6 +72,7 @@ namespace AdditionalAttribute
 				AppointmentDetails();
 				this.IsVisible = false;
 			}
+            Debug.WriteLine("EditorLayout: end of SaveButton_Clicked");
 		}
 
 		private void AppointmentDetails()

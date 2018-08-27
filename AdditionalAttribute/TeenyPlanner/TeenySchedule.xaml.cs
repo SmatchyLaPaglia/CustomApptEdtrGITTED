@@ -16,7 +16,7 @@ namespace TeenyPlanner
                 addressEditor.Text = value;
             } 
         }
-        string editorPlaceholderText = "enter shmaddress";
+        string editorPlaceholderText = "enter address";
         Color editorPlaceholderTextColor = Color.Gray;
         public TimePicker ThisTimePicker
         {

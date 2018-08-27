@@ -21,6 +21,7 @@ namespace TeenyPlanner
             base.OnAppearing();
 
             ConfigureSendButtonAction();
+            ConfigureDispatchItButtonAction();
 
             Debug.WriteLine(this.Padding.Top);
             Debug.WriteLine(On<Xamarin.Forms.PlatformConfiguration.iOS>().SafeAreaInsets().Top);
@@ -37,9 +38,15 @@ namespace TeenyPlanner
             mainGrid.Padding = safeInsets;
         }
 
+        private void ConfigureDispatchItButtonAction()
+        {
+            animatingView.DispatchItButton.Clicked += (s, e) => {
+                Debug.WriteLine("TeenyPlannerPage: ConfigureDispatchItButtonAction: yep, DispatchItButton got clicked.");
+            };
+        }
+
         private void ConfigureSendButtonAction() {
             teenySchedule.SendButton.Clicked += (s, e) => {
-                var timeString = teenySchedule.
                 var timeString = DateTime.Today.Add(teenySchedule.ThisTimePicker.Time).ToString(teenySchedule.ThisTimePicker.Format);
                 animatingView.DispatchTime.Text = timeString;
                 animatingView.DispatchData.Text = teenySchedule.EditorText;
