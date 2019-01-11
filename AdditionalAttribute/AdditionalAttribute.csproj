@@ -31,9 +31,6 @@
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="AdditionalAttributePage.xaml" />
-    <EmbeddedResource Include="EditorLayout.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="TeenyPlanner\TeenySchedule.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -51,6 +48,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="flower.jpg" />
+    <EmbeddedResource Include="EditorLayout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -61,12 +61,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CustomAppointment.cs" />
-    <Compile Include="EditorLayout.xaml.cs">
-      <DependentUpon>EditorLayout.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModel\EditorLayoutViewModel.cs" />
     <Compile Include="Meeting.cs" />
-    <Compile Include="ViewModel\AppointmentEditorViewModel.cs" />
     <Compile Include="TeenyPlanner\TeenySchedule.xaml.cs">
       <DependentUpon>TeenySchedule.xaml</DependentUpon>
     </Compile>
@@ -81,6 +76,11 @@
     <Compile Include="TeenyPlanner\AnimatePreparedDispatchView.xaml.cs">
       <DependentUpon>AnimatePreparedDispatchView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditorLayout.xaml.cs">
+      <DependentUpon>EditorLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\AppointmentEditorViewModel.cs" />
+    <Compile Include="ViewModel\EditorLayoutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
